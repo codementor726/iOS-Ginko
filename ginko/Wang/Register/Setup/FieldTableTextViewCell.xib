@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="FieldTableTextViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B1H-U3-tLq" userLabel="Border View">
+                        <rect key="frame" x="20" y="78" width="250" height="1"/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="xiq-m3-xln"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZc-XK-27I">
+                        <rect key="frame" x="273" y="8" width="47" height="71"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="47" id="Kah-e3-VX0"/>
+                        </constraints>
+                        <inset key="contentEdgeInsets" minX="0.0" minY="16" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" image="field_item_trash"/>
+                        <connections>
+                            <action selector="deleteField:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="oiY-ro-h7n"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WQ7-a2-IyK">
+                        <rect key="frame" x="20" y="16" width="20" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="FO8-x3-M94"/>
+                            <constraint firstAttribute="height" constant="32" id="YW4-7A-5CI"/>
+                        </constraints>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eius" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="k2g-16-wU3" customClass="SAMTextView">
+                        <rect key="frame" x="50" y="16" width="220" height="56"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="26" id="u4C-0H-ka7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WQ7-a2-IyK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="0BS-Lh-9BK"/>
+                    <constraint firstAttribute="trailing" secondItem="ZZc-XK-27I" secondAttribute="trailing" id="5DO-Dx-c0u"/>
+                    <constraint firstItem="ZZc-XK-27I" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="DB1-Ps-Kvp"/>
+                    <constraint firstItem="WQ7-a2-IyK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="F7Y-O5-aWE"/>
+                    <constraint firstItem="B1H-U3-tLq" firstAttribute="top" secondItem="k2g-16-wU3" secondAttribute="bottom" constant="6" id="FKG-n4-P5m"/>
+                    <constraint firstAttribute="bottom" secondItem="B1H-U3-tLq" secondAttribute="bottom" id="LLh-MH-Uxa"/>
+                    <constraint firstAttribute="trailing" secondItem="B1H-U3-tLq" secondAttribute="trailing" constant="50" id="LaB-Pb-Tdk"/>
+                    <constraint firstItem="ZZc-XK-27I" firstAttribute="leading" secondItem="k2g-16-wU3" secondAttribute="trailing" constant="3" id="Tiv-Gp-a06"/>
+                    <constraint firstItem="B1H-U3-tLq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="adL-JD-Czz"/>
+                    <constraint firstItem="k2g-16-wU3" firstAttribute="top" secondItem="WQ7-a2-IyK" secondAttribute="top" id="d5E-Ea-c61"/>
+                    <constraint firstAttribute="bottom" secondItem="ZZc-XK-27I" secondAttribute="bottom" id="eD3-AL-eTt"/>
+                    <constraint firstItem="k2g-16-wU3" firstAttribute="leading" secondItem="WQ7-a2-IyK" secondAttribute="trailing" constant="10" id="hVa-l5-QeZ"/>
+                    <constraint firstItem="WQ7-a2-IyK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" priority="250" constant="16" id="j66-tQ-Scp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomHeight" destination="xiq-m3-xln" id="wTp-aS-WBT"/>
+                <outlet property="deleteButton" destination="ZZc-XK-27I" id="NC5-ow-Koj"/>
+                <outlet property="iconImage" destination="WQ7-a2-IyK" id="cjk-PL-zB8"/>
+                <outlet property="textView" destination="k2g-16-wU3" id="lhf-MQ-Luv"/>
+            </connections>
+            <point key="canvasLocation" x="280" y="340"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="field_item_trash" width="14" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="KGk-i7-Jjw" customClass="CISyncCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" alpha="0.59999999999999998" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdl-I9-RNu" userLabel="Button - home">
+                        <rect key="frame" x="265" y="0.0" width="50" height="59"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="vqu-wU-fVo"/>
+                        </constraints>
+                        <state key="normal" image="HomeIcon">
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="selected" image="HomeIconSelected"/>
+                        <connections>
+                            <action selector="onType:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NzJ-w4-Zfs"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acme Corp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="465-zE-NgK">
+                        <rect key="frame" x="19" y="9" width="138" height="21"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.44679939746856689" green="0.25948736071586609" blue="0.43050441145896912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smith" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVS-Np-5cg">
+                        <rect key="frame" x="19" y="30" width="138" height="21"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.44679939746856689" green="0.25948736071586609" blue="0.43050441145896912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DcE-nf-Pa6" userLabel="Button - name button">
+                        <rect key="frame" x="19" y="4" width="138" height="46"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="7kE-Zn-GXs"/>
+                        </constraints>
+                        <state key="normal">
+                            <color key="titleColor" red="0.58587217330932617" green="0.40772539377212524" blue="0.21670845150947571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="onName:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="KDi-jx-t6G"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Seperator.png" translatesAutoresizingMaskIntoConstraints="NO" id="JiG-bw-keW">
+                        <rect key="frame" x="12" y="58" width="296" height="1"/>
+                        <color key="backgroundColor" red="0.58587217330932617" green="0.40772539377212524" blue="0.21670845150947571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.58587217330932617" green="0.40772539377212524" blue="0.21670845150947571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="fcd-a0-DWl"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" alpha="0.59999999999999998" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCo-AP-M7T" userLabel="Button - entity">
+                        <rect key="frame" x="165" y="0.0" width="50" height="59"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="u2v-I9-P7x"/>
+                        </constraints>
+                        <state key="normal" image="EntityIcon">
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="selected" image="EntityIconSelected"/>
+                        <connections>
+                            <action selector="onType:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nGd-tx-i4S"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" alpha="0.59999999999999998" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1m4-zw-ViQ" userLabel="Button - work">
+                        <rect key="frame" x="215" y="0.0" width="50" height="59"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Och-wa-veb"/>
+                        </constraints>
+                        <state key="normal" image="WorkIcon">
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="selected" image="WorkIconSelected"/>
+                        <connections>
+                            <action selector="onType:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gfA-XK-GDt"/>
+                        </connections>
+                    </button>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1To-oa-tQ1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="DcE-nf-Pa6" firstAttribute="trailing" secondItem="XVS-Np-5cg" secondAttribute="trailing" id="11g-Ax-Lde"/>
+                    <constraint firstAttribute="bottom" secondItem="JiG-bw-keW" secondAttribute="bottom" id="50B-94-fFu"/>
+                    <constraint firstItem="1m4-zw-ViQ" firstAttribute="leading" secondItem="jCo-AP-M7T" secondAttribute="trailing" id="A3B-if-wKd"/>
+                    <constraint firstItem="jCo-AP-M7T" firstAttribute="leading" secondItem="DcE-nf-Pa6" secondAttribute="trailing" constant="8" id="Anf-g2-4Zq"/>
+                    <constraint firstAttribute="trailing" secondItem="xdl-I9-RNu" secondAttribute="trailing" constant="5" id="B7D-6v-GbZ"/>
+                    <constraint firstItem="DcE-nf-Pa6" firstAttribute="leading" secondItem="465-zE-NgK" secondAttribute="leading" id="CHq-tF-7eI"/>
+                    <constraint firstItem="xdl-I9-RNu" firstAttribute="leading" secondItem="1m4-zw-ViQ" secondAttribute="trailing" id="GBb-Cg-Qyf"/>
+                    <constraint firstItem="DcE-nf-Pa6" firstAttribute="trailing" secondItem="465-zE-NgK" secondAttribute="trailing" id="K0v-uz-iGR"/>
+                    <constraint firstItem="1m4-zw-ViQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Mvb-HM-EJD"/>
+                    <constraint firstItem="DcE-nf-Pa6" firstAttribute="top" secondItem="465-zE-NgK" secondAttribute="top" constant="-5" id="PDO-eJ-1dG"/>
+                    <constraint firstItem="jCo-AP-M7T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Q2b-yt-86e"/>
+                    <constraint firstAttribute="bottom" secondItem="xdl-I9-RNu" secondAttribute="bottom" id="fK6-7d-lJL"/>
+                    <constraint firstItem="DcE-nf-Pa6" firstAttribute="leading" secondItem="XVS-Np-5cg" secondAttribute="leading" id="fTl-gf-SZd"/>
+                    <constraint firstAttribute="bottom" secondItem="jCo-AP-M7T" secondAttribute="bottom" id="jdb-Ul-kOl"/>
+                    <constraint firstItem="JiG-bw-keW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="jl9-gF-9IS"/>
+                    <constraint firstAttribute="bottom" secondItem="1m4-zw-ViQ" secondAttribute="bottom" id="paD-Qa-4Sd"/>
+                    <constraint firstItem="DcE-nf-Pa6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="19" id="qLs-ef-WXJ"/>
+                    <constraint firstAttribute="trailing" secondItem="JiG-bw-keW" secondAttribute="trailing" constant="12" id="uXa-v1-0sy"/>
+                    <constraint firstItem="DcE-nf-Pa6" firstAttribute="top" secondItem="XVS-Np-5cg" secondAttribute="top" constant="-26" id="ycA-T3-9j7"/>
+                    <constraint firstItem="DcE-nf-Pa6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="ydt-Fw-Ucz"/>
+                    <constraint firstItem="xdl-I9-RNu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zdm-uB-RaD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="btnEntity" destination="jCo-AP-M7T" id="rzu-ZI-UKN"/>
+                <outlet property="btnHome" destination="xdl-I9-RNu" id="yJm-JI-nzC"/>
+                <outlet property="btnWork" destination="1m4-zw-ViQ" id="awA-7g-QcI"/>
+                <outlet property="lblFirstMiddleName" destination="465-zE-NgK" id="T8d-Rp-ANC"/>
+                <outlet property="lblLastName" destination="XVS-Np-5cg" id="yx7-n8-yQQ"/>
+                <outlet property="maskViewForSel" destination="1To-oa-tQ1" id="arL-cn-ckd"/>
+                <outlet property="nameButton" destination="DcE-nf-Pa6" id="0Uy-HG-TZD"/>
+            </connections>
+            <point key="canvasLocation" x="-145" y="-4"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="EntityIcon" width="27" height="24"/>
+        <image name="EntityIconSelected" width="27" height="24"/>
+        <image name="HomeIcon" width="25" height="25"/>
+        <image name="HomeIconSelected" width="25" height="25"/>
+        <image name="Seperator.png" width="437" height="1"/>
+        <image name="WorkIcon" width="24" height="21"/>
+        <image name="WorkIconSelected" width="24" height="21"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

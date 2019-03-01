@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoViewController">
+            <connections>
+                <outlet property="CreateTitleLabel" destination="MYD-od-9Ay" id="bvF-1s-nV1"/>
+                <outlet property="EditTitleLabel" destination="s3L-1n-RpD" id="EhN-hK-bwV"/>
+                <outlet property="btnForBack" destination="5tA-D2-abw" id="bMa-SQ-1br"/>
+                <outlet property="btnForClose" destination="n5D-PS-6rR" id="Xt6-fQ-not"/>
+                <outlet property="btnForEdit" destination="JZV-6u-jI1" id="jT8-S0-qSV"/>
+                <outlet property="itemForSkip" destination="MLa-tQ-Ldv" id="S6w-rE-k3g"/>
+                <outlet property="lblArchive" destination="9i3-t2-4pc" id="ny2-ov-oKC"/>
+                <outlet property="lblSkip" destination="Fio-g3-OA5" id="Dzr-KL-ksE"/>
+                <outlet property="scvArchive" destination="wlz-7h-hCx" id="cic-T6-BEy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SetupLeaf.png" id="DLA-jS-qHD">
+                    <rect key="frame" x="19" y="5" width="301" height="333"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Your Home Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="s3L-1n-RpD">
+                    <rect key="frame" x="8" y="30" width="304" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <color key="textColor" cyan="0.75" magenta="0.29999999999999999" yellow="1" black="0.16" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Your Home Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MYD-od-9Ay">
+                    <rect key="frame" x="8" y="30" width="304" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <color key="textColor" cyan="0.75" magenta="0.29999999999999999" yellow="1" black="0.16" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Choose or Take a Photo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GTf-pO-lsa">
+                    <rect key="frame" x="19" y="87" width="282" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" cyan="0.75" magenta="0.29999999999999999" yellow="1" black="0.16" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Select a Background Color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="es2-RC-6vk">
+                    <rect key="frame" x="0.0" y="208" width="320" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" cyan="0.75" magenta="0.29999999999999999" yellow="1" black="0.16" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" id="01n-Zo-fuG">
+                    <rect key="frame" x="32" y="259" width="275" height="58"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bc_black.png" id="19n-1K-Zcj">
+                            <rect key="frame" x="4" y="5" width="48" height="48"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <button opaque="NO" tag="201" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2jP-zz-TLx">
+                            <rect key="frame" x="4" y="5" width="48" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onBackgroundColor:" destination="-1" eventType="touchUpInside" id="tgU-94-9TB"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bc_grey.png" id="5WG-Xo-TVv">
+                            <rect key="frame" x="58" y="5" width="48" height="48"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <button opaque="NO" tag="202" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cpb-TR-xzS">
+                            <rect key="frame" x="58" y="5" width="48" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onBackgroundColor:" destination="-1" eventType="touchUpInside" id="GEu-Rm-lnS"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bc_silver.png" id="jei-Kx-XET">
+                            <rect key="frame" x="112" y="5" width="48" height="48"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <button opaque="NO" tag="203" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bJY-Hg-cI2">
+                            <rect key="frame" x="112" y="5" width="48" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onBackgroundColor:" destination="-1" eventType="touchUpInside" id="tjH-Wc-lTt"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bc_white.png" id="u1R-Pu-tM3">
+                            <rect key="frame" x="166" y="5" width="48" height="48"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <button opaque="NO" tag="204" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Nyj-bJ-0US">
+                            <rect key="frame" x="166" y="5" width="48" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onBackgroundColor:" destination="-1" eventType="touchUpInside" id="5Lt-hr-f2O"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" id="4bE-20-u4Z">
+                            <rect key="frame" x="220" y="5" width="48" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MYR-s4-jmV">
+                                    <rect key="frame" x="1" y="1" width="46" height="46"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="MORE">
+                                        <color key="titleColor" cyan="0.75" magenta="0.29999999999999999" yellow="1" black="0.16" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onMore:" destination="-1" eventType="touchUpInside" id="01O-TQ-VEx"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" cyan="0.75" magenta="0.29999999999999999" yellow="1" black="0.16" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="THu-Nm-VZ5" userLabel="Btn - Take a Photo">
+                    <rect key="frame" x="88" y="136" width="48" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" image="BtnCamera.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onBtnTake:" destination="-1" eventType="touchUpInside" id="loJ-og-v0O"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ppy-qe-AI1" userLabel="Btn - Choose a Photo">
+                    <rect key="frame" x="203" y="138" width="48" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" image="BtnCameraRoll.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onBtnChoose:" destination="-1" eventType="touchUpInside" id="I4j-nw-cFj"/>
+                    </connections>
+                </button>
+                <scrollView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="wlz-7h-hCx">
+                    <rect key="frame" x="0.0" y="394" width="320" height="110"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </scrollView>
+                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Background Image Archive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9i3-t2-4pc">
+                    <rect key="frame" x="0.0" y="339" width="320" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" cyan="0.75" magenta="0.29999999999999999" yellow="1" black="0.16" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Skip for Text Only" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fio-g3-OA5">
+                    <rect key="frame" x="0.0" y="372" width="320" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" cyan="0.75" magenta="0.29999999999999999" yellow="1" black="0.16" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="153" y="158"/>
+        </view>
+        <barButtonItem title="Skip" style="plain" id="MLa-tQ-Ldv">
+            <color key="tintColor" cyan="0.75" magenta="0.29999999999999999" yellow="1" black="0.16" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+            <connections>
+                <action selector="onBtnSkip:" destination="-1" id="Id1-9I-wYK"/>
+            </connections>
+        </barButtonItem>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5tA-D2-abw" userLabel="Btn - Back">
+            <rect key="frame" x="0.0" y="0.0" width="13" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" image="BackArrow">
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+            <connections>
+                <action selector="onBtnBack:" destination="-1" eventType="touchUpInside" id="vz3-Y0-fCK"/>
+            </connections>
+        </button>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JZV-6u-jI1" userLabel="Btn - Edit">
+            <rect key="frame" x="0.0" y="0.0" width="25" height="24"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" image="BtnSkipWork.png">
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+            <connections>
+                <action selector="onBtnEdit:" destination="-1" eventType="touchUpInside" id="mJq-Lo-ZKL"/>
+            </connections>
+        </button>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="n5D-PS-6rR" userLabel="Btn - Close">
+            <rect key="frame" x="0.0" y="0.0" width="13" height="13"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" image="btn_close.png">
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+            <connections>
+                <action selector="onBtnBack:" destination="-1" eventType="touchUpInside" id="Ig7-pE-TdZ"/>
+            </connections>
+        </button>
+    </objects>
+    <resources>
+        <image name="BackArrow" width="13" height="21"/>
+        <image name="BtnCamera.png" width="95" height="72"/>
+        <image name="BtnCameraRoll.png" width="95" height="67"/>
+        <image name="BtnSkipWork.png" width="63" height="63"/>
+        <image name="SetupLeaf.png" width="602" height="667"/>
+        <image name="bc_black.png" width="320" height="320"/>
+        <image name="bc_grey.png" width="320" height="320"/>
+        <image name="bc_silver.png" width="320" height="320"/>
+        <image name="bc_white.png" width="320" height="320"/>
+        <image name="btn_close.png" width="22" height="22"/>
+    </resources>
+</document>

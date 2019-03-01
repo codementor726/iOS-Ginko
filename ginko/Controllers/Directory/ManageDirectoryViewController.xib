@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ManageDirectoryViewController">
+            <connections>
+                <outlet property="btnAuto" destination="ZEI-vC-XBU" id="n9z-ee-lsL"/>
+                <outlet property="btnDirectoryLogo" destination="r0o-eB-9cm" id="fNm-gS-p8v"/>
+                <outlet property="btnManual" destination="Qw0-Wi-Ypt" id="122-cP-Ipu"/>
+                <outlet property="btnPrivate" destination="0NX-Kj-EBe" id="A3s-2Q-gA5"/>
+                <outlet property="btnPublic" destination="snP-z3-FRq" id="o94-Zr-2wh"/>
+                <outlet property="domainTableview" destination="BQi-aO-fDe" id="wdv-u7-BtS"/>
+                <outlet property="domainView" destination="MmZ-cz-Cca" id="EL9-a1-2Kn"/>
+                <outlet property="lblDirectoryName" destination="96Z-Hb-M9v" id="cdr-oh-Csz"/>
+                <outlet property="nameView" destination="3fP-gG-tv7" id="jtf-pD-RzE"/>
+                <outlet property="txtName" destination="2Df-qC-3If" id="BEh-lI-57g"/>
+                <outlet property="view" destination="xUT-oc-o3V" id="3qH-eH-GAW"/>
+                <outlet property="viewPrivateOrPublic" destination="WsB-19-jr8" id="X9T-Il-KZI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="xUT-oc-o3V">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0NX-Kj-EBe">
+                    <rect key="frame" x="35" y="127" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="btn_uncheck_purple"/>
+                    <state key="selected" image="btn_check_purple"/>
+                    <connections>
+                        <action selector="onPrivate:" destination="-1" eventType="touchUpInside" id="ewP-nI-D9L"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="snP-z3-FRq">
+                    <rect key="frame" x="162" y="127" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="btn_uncheck_purple"/>
+                    <state key="selected" image="btn_check_purple"/>
+                    <connections>
+                        <action selector="onPublic:" destination="-1" eventType="touchUpInside" id="wa6-kA-rsg"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Private" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qnp-k8-thR">
+                    <rect key="frame" x="83" y="137" width="71" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Public" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gAN-dQ-Cpc">
+                    <rect key="frame" x="210" y="137" width="71" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" misplaced="YES" id="MmZ-cz-Cca">
+                    <rect key="frame" x="16" y="233" width="288" height="262"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="BQi-aO-fDe">
+                            <rect key="frame" x="8" y="56" width="271" height="198"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="qs2-Kb-5we"/>
+                                <outlet property="delegate" destination="-1" id="odt-M8-0la"/>
+                            </connections>
+                        </tableView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Email domain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8ag-b8-U7O">
+                            <rect key="frame" x="8" y="8" width="181" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="V6c-mk-eHr">
+                            <rect key="frame" x="238" y="8" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="btn_directory_domain.png"/>
+                            <connections>
+                                <action selector="onAddDomain:" destination="-1" eventType="touchUpInside" id="JGk-i7-O5d"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="r0o-eB-9cm">
+                    <rect key="frame" x="23" y="24" width="80" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="entity_add_logo"/>
+                    <connections>
+                        <action selector="onUpdateDirectoryLogo:" destination="-1" eventType="touchUpInside" id="496-5g-rMO"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" misplaced="YES" id="3fP-gG-tv7">
+                    <rect key="frame" x="120" y="44" width="184" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Directory Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="2Df-qC-3If">
+                            <rect key="frame" x="4" y="8" width="180" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="1EV-ZD-bzH"/>
+                            </connections>
+                        </textField>
+                        <view contentMode="scaleToFill" misplaced="YES" id="gaJ-xE-y9z">
+                            <rect key="frame" x="0.0" y="38" width="184" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="96Z-Hb-M9v">
+                    <rect key="frame" x="120" y="44" width="184" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" misplaced="YES" id="WsB-19-jr8">
+                    <rect key="frame" x="16" y="178" width="288" height="47"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qw0-Wi-Ypt">
+                            <rect key="frame" x="145" y="3" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="btn_uncheck_purple"/>
+                            <state key="selected" image="btn_check_purple"/>
+                            <connections>
+                                <action selector="onManual:" destination="-1" eventType="touchUpInside" id="Z0g-j6-PYz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZEI-vC-XBU">
+                            <rect key="frame" x="20" y="3" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="btn_uncheck_purple"/>
+                            <state key="selected" image="btn_check_purple"/>
+                            <connections>
+                                <action selector="onAuto:" destination="-1" eventType="touchUpInside" id="XFQ-sj-FSM"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Auto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QKz-tA-J0Q">
+                            <rect key="frame" x="68" y="13" width="71" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Manual" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wpt-2n-yOf">
+                            <rect key="frame" x="193" y="12" width="71" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="393" y="250"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_check_purple" width="18" height="18"/>
+        <image name="btn_directory_domain.png" width="51" height="50"/>
+        <image name="btn_uncheck_purple" width="18" height="18"/>
+        <image name="entity_add_logo" width="90" height="89"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

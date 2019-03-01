@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IMPhotoCameraController">
+            <connections>
+                <outlet property="btnForFlash" destination="lm8-eE-H29" id="Hez-cB-aNC"/>
+                <outlet property="btnForFlip" destination="DEc-Ug-HBb" id="bv2-ZD-Qq6"/>
+                <outlet property="btnForGrid" destination="Zr0-bN-X9a" id="dJ3-m9-6iZ"/>
+                <outlet property="btnForTake" destination="YOs-Tf-r9Y" id="EgL-5o-3GU"/>
+                <outlet property="imgForFocus" destination="pgy-Ks-4fg" id="EyK-1n-Mld"/>
+                <outlet property="imgForGrid" destination="gwm-o7-qrD" id="PXs-iF-Vif"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewForPhotoCamera" destination="iZZ-ce-r4F" id="ZZt-U5-T9p"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="iZZ-ce-r4F" userLabel="View - Photo">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="359"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grid.png" id="gwm-o7-qrD" userLabel="Img - Grid">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="359"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touch_focus_x.png" id="pgy-Ks-4fg" userLabel="Img - Focus">
+                            <rect key="frame" x="123" y="123" width="73" height="73"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="2cg-jb-EbR" userLabel="View - Tools">
+                    <rect key="frame" x="0.0" y="359" width="320" height="49"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Zr0-bN-X9a" userLabel="Btn - Grid">
+                            <rect key="frame" x="57" y="15" width="22" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="VideoTool1.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="VideoToolUp1.png"/>
+                            <connections>
+                                <action selector="onBtnGrid:" destination="-1" eventType="touchUpInside" id="wDA-Be-d9I"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="DEc-Ug-HBb" userLabel="Btn - Flip">
+                            <rect key="frame" x="147" y="14" width="26" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="VideoTool3.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="VideoToolUp3.png"/>
+                            <connections>
+                                <action selector="onBtnFlip:" destination="-1" eventType="touchUpInside" id="5Pd-eH-tID"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="lm8-eE-H29" userLabel="Btn - Flash">
+                            <rect key="frame" x="237" y="11" width="20" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="VideoTool2.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="VideoToolUp2.png"/>
+                            <connections>
+                                <action selector="onBtnFlash:" destination="-1" eventType="touchUpInside" id="KTb-Ff-fhD"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.086810611188411713" green="0.086808003485202789" blue="0.08680947870016098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="vCb-ct-a6k" userLabel="View - Take a Photo">
+                    <rect key="frame" x="0.0" y="408" width="320" height="96"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YOs-Tf-r9Y" userLabel="Btn - Take">
+                            <rect key="frame" x="120" y="8" width="80" height="80"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <state key="normal" image="shot.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted" image="shot_h.png"/>
+                            <connections>
+                                <action selector="onBtnTake:" destination="-1" eventType="touchUpInside" id="KhP-CQ-ru4"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.15056313574314117" green="0.15055863559246063" blue="0.15056121349334717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Grid.png" width="320" height="320"/>
+        <image name="VideoTool1.png" width="44" height="44"/>
+        <image name="VideoTool2.png" width="39" height="60"/>
+        <image name="VideoTool3.png" width="52" height="48"/>
+        <image name="VideoToolUp1.png" width="44" height="44"/>
+        <image name="VideoToolUp2.png" width="39" height="60"/>
+        <image name="VideoToolUp3.png" width="52" height="48"/>
+        <image name="shot.png" width="90" height="90"/>
+        <image name="shot_h.png" width="90" height="90"/>
+        <image name="touch_focus_x.png" width="73" height="73"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

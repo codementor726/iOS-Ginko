@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YYYChatViewController">
+            <connections>
+                <outlet property="btDelete" destination="K9J-M7-pP5" id="2Uf-fI-VIO"/>
+                <outlet property="btEmoji1" destination="2M4-F8-jZG" id="W5s-Ya-gmc"/>
+                <outlet property="btEmoji2" destination="Wvb-Yb-hce" id="z0i-b8-PQ6"/>
+                <outlet property="btEmoji3" destination="cMj-6V-Jit" id="Idd-Es-khG"/>
+                <outlet property="btEmoji4" destination="ecp-2N-UlJ" id="gsd-AK-g4z"/>
+                <outlet property="btEmoticon" destination="F7a-Ww-1eM" id="c3z-nz-9mW"/>
+                <outlet property="btMap" destination="s6V-a5-3WI" id="bVe-lB-hKp"/>
+                <outlet property="btMask" destination="hqJ-gV-LDd" id="eQC-hK-0rX"/>
+                <outlet property="btPhoto" destination="D49-sx-Smw" id="CRc-yz-uJ5"/>
+                <outlet property="btRecording" destination="Mvp-xC-EK3" id="N9v-ND-rsp"/>
+                <outlet property="btSend" destination="WkZ-xa-hw0" id="p4U-Xl-rfM"/>
+                <outlet property="btVideo" destination="prM-8c-SwG" id="T2Y-Jj-Nei"/>
+                <outlet property="btVoice" destination="EKR-nI-9ic" id="cIM-ko-lgu"/>
+                <outlet property="btWrite" destination="P3h-XS-4C9" id="nPO-Ux-kEs"/>
+                <outlet property="bubbleTable" destination="dZ8-MO-wAk" id="TYD-Vz-ijj"/>
+                <outlet property="keyboardHeight" destination="AKb-NC-mCW" id="pgj-xY-MfQ"/>
+                <outlet property="messageHeight" destination="hen-Bl-2bU" id="vYw-Gz-d9b"/>
+                <outlet property="pgCtl" destination="PE6-PJ-crU" id="bco-IB-3xg"/>
+                <outlet property="scvEmoji" destination="kvw-fw-rPa" id="sRk-0N-bix"/>
+                <outlet property="txtMessage" destination="fdh-mf-80F" id="xQT-4F-1RB"/>
+                <outlet property="view" destination="g5E-2y-Ebc" id="hQX-hg-BIJ"/>
+                <outlet property="vwEmoItem" destination="H8a-qs-41e" id="7D6-7V-Gye"/>
+                <outlet property="vwEmoticon" destination="6db-H2-8jw" id="cMM-bi-IUg"/>
+                <outlet property="vwSend" destination="XIR-Wt-nJJ" id="CAU-ln-cw1"/>
+                <outlet property="vwTrash" destination="qhp-2W-BBW" id="84d-IY-d91"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="g5E-2y-Ebc">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="dZ8-MO-wAk" customClass="UIBubbleTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="413"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="bubbleDataSource" destination="-1" id="2yW-E7-Vki"/>
+                        <outlet property="bubbledelegate" destination="-1" id="840-v7-AIE"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6db-H2-8jw">
+                    <rect key="frame" x="0.0" y="504" width="320" height="216"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kvw-fw-rPa">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </scrollView>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="PE6-PJ-crU">
+                            <rect key="frame" x="141" y="180" width="39" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="pageIndicatorTintColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="currentPageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </pageControl>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="216" id="Mel-H3-wnW"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XIR-Wt-nJJ">
+                    <rect key="frame" x="0.0" y="414" width="320" height="90"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oe0-rP-KJa">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                            <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="oup-uT-CoI"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3h-XS-4C9" userLabel="Button - Edit">
+                            <rect key="frame" x="8" y="50" width="40" height="40"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="F1m-sP-CUL"/>
+                                <constraint firstAttribute="height" constant="40" id="zjX-c9-LRM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="WhiteChatPen">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btWriteClick:" destination="-1" eventType="touchUpInside" id="WVS-kQ-Omp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKR-nI-9ic" userLabel="Button - Voice">
+                            <rect key="frame" x="272" y="50" width="40" height="40"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="b9t-lZ-OBn"/>
+                                <constraint firstAttribute="width" constant="40" id="yxp-L7-Sta"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="WhiteChatVoice">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btVoiceCancel:" destination="-1" eventType="touchUpOutside" id="Oht-mk-AIs"/>
+                                <action selector="btVoiceSend:" destination="-1" eventType="touchUpInside" id="zDS-ww-fRW"/>
+                                <action selector="btVoiceStart:" destination="-1" eventType="touchDown" id="Gte-mD-QR7"/>
+                                <action selector="btVoiceTouchCancel:" destination="-1" eventType="touchCancel" id="4IK-67-bAs"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mvp-xC-EK3" userLabel="Button - Sel">
+                            <rect key="frame" x="8" y="50" width="40" height="40"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="P6K-7n-feS"/>
+                                <constraint firstAttribute="height" constant="40" id="PEe-rn-iNb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="mic_sel">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WkZ-xa-hw0" userLabel="Button - Send">
+                            <rect key="frame" x="272" y="50" width="40" height="40"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="BkT-HY-lKh"/>
+                                <constraint firstAttribute="width" constant="40" id="byp-0e-XrE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="WhiteChatSend">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btSendClick:" destination="-1" eventType="touchUpInside" id="KJy-Zc-VJ6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6V-a5-3WI" userLabel="Button - Map">
+                            <rect key="frame" x="30" y="0.0" width="44" height="44"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="CJ4-hu-9gj"/>
+                                <constraint firstAttribute="height" constant="44" id="axq-JP-z7F"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="WhiteChatLoc">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btMapClick:" destination="-1" eventType="touchUpInside" id="Onh-FH-t9i"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D49-sx-Smw" userLabel="Button - Photo">
+                            <rect key="frame" x="102" y="0.0" width="44" height="44"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="0AU-1C-FmU"/>
+                                <constraint firstAttribute="height" constant="44" id="M9z-dw-FRJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="WhiteChatCamera">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btPhotoClick:" destination="-1" eventType="touchUpInside" id="67o-v8-ceg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prM-8c-SwG" userLabel="Button - Video">
+                            <rect key="frame" x="174" y="0.0" width="44" height="44"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="5P4-i2-ZQd"/>
+                                <constraint firstAttribute="height" constant="44" id="Esa-D3-l7c"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="WhiteChatVideo">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btVideoClick:" destination="-1" eventType="touchUpInside" id="XSf-0B-xA5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7a-Ww-1eM" userLabel="Button - Emoji">
+                            <rect key="frame" x="246" y="0.0" width="44" height="44"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="0u5-nS-z7s"/>
+                                <constraint firstAttribute="width" constant="44" id="9ab-aC-sK2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="WhiteChatEmoticon">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btEmoticonClick:" destination="-1" eventType="touchUpInside" id="EoS-VZ-HN8"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8a-qs-41e">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zi6-rC-LCq">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="9OX-4H-2wf"/>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="SUT-0M-7zn"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecp-2N-UlJ" userLabel="Bt Emoji2">
+                                    <rect key="frame" x="30" y="1" width="44" height="44"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="44" id="3qP-bP-I67"/>
+                                        <constraint firstAttribute="height" constant="44" id="lOA-7W-0SH"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" image="Emoji2">
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" image="Emoji2_Selected"/>
+                                    <connections>
+                                        <action selector="btEmoji4Click:" destination="-1" eventType="touchUpInside" id="2vY-RB-8YR"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMj-6V-Jit" userLabel="Bt Emoji1">
+                                    <rect key="frame" x="102" y="1" width="44" height="44"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="Ol3-9p-DaY"/>
+                                        <constraint firstAttribute="width" constant="44" id="QNe-ep-Tai"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" image="Emoji1">
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" image="Emoji1_Selected"/>
+                                    <connections>
+                                        <action selector="btEmoji3Click:" destination="-1" eventType="touchUpInside" id="kN3-wn-I9g"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvb-Yb-hce" userLabel="Bt Emoji3">
+                                    <rect key="frame" x="174" y="1" width="44" height="44"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="44" id="PMb-NV-nii"/>
+                                        <constraint firstAttribute="height" constant="44" id="Wdb-J1-jTd"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" image="Emoji3">
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" image="Emoji3_Selected"/>
+                                    <connections>
+                                        <action selector="btEmoji2Click:" destination="-1" eventType="touchUpInside" id="CE8-Jo-734"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2M4-F8-jZG" userLabel="Bt Emoji4">
+                                    <rect key="frame" x="246" y="1" width="44" height="44"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="Fzx-AF-G0F"/>
+                                        <constraint firstAttribute="width" constant="44" id="mPm-hP-su0"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" image="Emoji4">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" image="Emoji4_Selected"/>
+                                    <connections>
+                                        <action selector="btEmoji1Click:" destination="-1" eventType="touchUpInside" id="9ei-XT-ZSb"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="ecp-2N-UlJ" firstAttribute="centerX" secondItem="H8a-qs-41e" secondAttribute="centerX" constant="-108" id="09R-G0-3T6"/>
+                                <constraint firstItem="Wvb-Yb-hce" firstAttribute="centerY" secondItem="H8a-qs-41e" secondAttribute="centerY" id="7lA-eU-5JU"/>
+                                <constraint firstItem="2M4-F8-jZG" firstAttribute="centerX" secondItem="H8a-qs-41e" secondAttribute="centerX" constant="108" id="GsM-eF-bYI"/>
+                                <constraint firstItem="Zi6-rC-LCq" firstAttribute="top" secondItem="H8a-qs-41e" secondAttribute="top" id="Okp-mI-1Ol"/>
+                                <constraint firstItem="2M4-F8-jZG" firstAttribute="centerY" secondItem="H8a-qs-41e" secondAttribute="centerY" id="SHo-hB-nad"/>
+                                <constraint firstItem="Wvb-Yb-hce" firstAttribute="centerX" secondItem="H8a-qs-41e" secondAttribute="centerX" constant="36" id="SKr-yN-lY0"/>
+                                <constraint firstAttribute="height" constant="45" id="fln-8a-ynA"/>
+                                <constraint firstItem="Zi6-rC-LCq" firstAttribute="leading" secondItem="H8a-qs-41e" secondAttribute="leading" id="lfr-y9-WNL"/>
+                                <constraint firstItem="cMj-6V-Jit" firstAttribute="centerX" secondItem="H8a-qs-41e" secondAttribute="centerX" constant="-36" id="p5G-Xr-XDm"/>
+                                <constraint firstAttribute="trailing" secondItem="Zi6-rC-LCq" secondAttribute="trailing" id="pT2-gY-nde"/>
+                                <constraint firstItem="cMj-6V-Jit" firstAttribute="centerY" secondItem="H8a-qs-41e" secondAttribute="centerY" id="qdG-ek-lVf"/>
+                                <constraint firstItem="ecp-2N-UlJ" firstAttribute="centerY" secondItem="H8a-qs-41e" secondAttribute="centerY" id="t8s-1T-cgt"/>
+                            </constraints>
+                        </view>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fdh-mf-80F">
+                            <rect key="frame" x="55" y="52" width="209" height="33"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="33" id="hen-Bl-2bU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="yqA-Uw-d5n"/>
+                            </connections>
+                        </textView>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqJ-gV-LDd">
+                            <rect key="frame" x="0.0" y="2" width="320" height="87"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.44679939746856689" green="0.25948736071586609" blue="0.43050441145896912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="EKR-nI-9ic" secondAttribute="bottom" id="78T-Ed-9OH"/>
+                        <constraint firstItem="Oe0-rP-KJa" firstAttribute="leading" secondItem="XIR-Wt-nJJ" secondAttribute="leading" id="8lz-b9-VlF"/>
+                        <constraint firstItem="prM-8c-SwG" firstAttribute="centerX" secondItem="XIR-Wt-nJJ" secondAttribute="centerX" constant="36" id="CCy-5c-Fm4"/>
+                        <constraint firstAttribute="bottom" secondItem="WkZ-xa-hw0" secondAttribute="bottom" id="Fzi-9s-pqd"/>
+                        <constraint firstItem="prM-8c-SwG" firstAttribute="top" secondItem="XIR-Wt-nJJ" secondAttribute="top" id="GWN-ff-G2W"/>
+                        <constraint firstAttribute="trailing" secondItem="WkZ-xa-hw0" secondAttribute="trailing" constant="8" id="HKU-Of-Epw"/>
+                        <constraint firstAttribute="trailing" secondItem="EKR-nI-9ic" secondAttribute="trailing" constant="8" id="Huu-Sw-0QM"/>
+                        <constraint firstAttribute="trailing" secondItem="Oe0-rP-KJa" secondAttribute="trailing" id="M6H-E5-GGO"/>
+                        <constraint firstItem="F7a-Ww-1eM" firstAttribute="centerX" secondItem="XIR-Wt-nJJ" secondAttribute="centerX" constant="108" id="NzO-tn-JwC"/>
+                        <constraint firstItem="P3h-XS-4C9" firstAttribute="leading" secondItem="XIR-Wt-nJJ" secondAttribute="leading" constant="8" id="OTk-tg-5oi"/>
+                        <constraint firstItem="s6V-a5-3WI" firstAttribute="centerX" secondItem="XIR-Wt-nJJ" secondAttribute="centerX" constant="-108" id="Ohv-fA-CzA"/>
+                        <constraint firstItem="Mvp-xC-EK3" firstAttribute="leading" secondItem="XIR-Wt-nJJ" secondAttribute="leading" constant="8" id="P5h-Ji-3xh"/>
+                        <constraint firstItem="D49-sx-Smw" firstAttribute="centerX" secondItem="XIR-Wt-nJJ" secondAttribute="centerX" constant="-36" id="QBb-Aw-hZN"/>
+                        <constraint firstItem="fdh-mf-80F" firstAttribute="top" secondItem="s6V-a5-3WI" secondAttribute="bottom" constant="8" id="SaR-YI-Jpf"/>
+                        <constraint firstAttribute="trailing" secondItem="H8a-qs-41e" secondAttribute="trailing" id="TlC-rZ-ZpW"/>
+                        <constraint firstItem="F7a-Ww-1eM" firstAttribute="top" secondItem="XIR-Wt-nJJ" secondAttribute="top" id="TpL-rF-PsV"/>
+                        <constraint firstItem="Oe0-rP-KJa" firstAttribute="top" secondItem="XIR-Wt-nJJ" secondAttribute="top" id="X3c-2l-jAb"/>
+                        <constraint firstItem="s6V-a5-3WI" firstAttribute="top" secondItem="XIR-Wt-nJJ" secondAttribute="top" id="awg-A3-obe"/>
+                        <constraint firstItem="WkZ-xa-hw0" firstAttribute="leading" secondItem="fdh-mf-80F" secondAttribute="trailing" constant="8" id="bGO-UA-Ts8"/>
+                        <constraint firstItem="H8a-qs-41e" firstAttribute="top" secondItem="XIR-Wt-nJJ" secondAttribute="top" id="evd-mV-UHL"/>
+                        <constraint firstAttribute="bottom" secondItem="Mvp-xC-EK3" secondAttribute="bottom" id="gGa-X0-hyp"/>
+                        <constraint firstAttribute="bottom" secondItem="fdh-mf-80F" secondAttribute="bottom" constant="5" id="hoJ-Fx-s74"/>
+                        <constraint firstAttribute="bottom" secondItem="P3h-XS-4C9" secondAttribute="bottom" id="i82-zP-Hgq"/>
+                        <constraint firstItem="H8a-qs-41e" firstAttribute="leading" secondItem="XIR-Wt-nJJ" secondAttribute="leading" id="jbU-2C-3i0"/>
+                        <constraint firstItem="D49-sx-Smw" firstAttribute="top" secondItem="XIR-Wt-nJJ" secondAttribute="top" id="rKT-T3-zwo"/>
+                        <constraint firstItem="fdh-mf-80F" firstAttribute="leading" secondItem="Mvp-xC-EK3" secondAttribute="trailing" constant="7" id="vbz-X0-LA3"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qhp-2W-BBW">
+                    <rect key="frame" x="0.0" y="451" width="320" height="53"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9J-M7-pP5">
+                            <rect key="frame" x="147" y="1" width="36" height="49"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="WhiteChatTrash">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btDeleteClick:" destination="-1" eventType="touchUpInside" id="FGH-uH-qDF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.44679939746856689" green="0.25948736071586609" blue="0.43050441145896912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dZ8-MO-wAk" firstAttribute="leading" secondItem="g5E-2y-Ebc" secondAttribute="leading" id="1j1-6e-eWJ"/>
+                <constraint firstItem="dZ8-MO-wAk" firstAttribute="top" secondItem="g5E-2y-Ebc" secondAttribute="top" id="4pj-Ee-J63"/>
+                <constraint firstAttribute="bottom" secondItem="XIR-Wt-nJJ" secondAttribute="bottom" id="AKb-NC-mCW"/>
+                <constraint firstAttribute="trailing" secondItem="XIR-Wt-nJJ" secondAttribute="trailing" id="DT8-MJ-AKh"/>
+                <constraint firstAttribute="trailing" secondItem="dZ8-MO-wAk" secondAttribute="trailing" id="Dd6-XD-ewY"/>
+                <constraint firstItem="6db-H2-8jw" firstAttribute="leading" secondItem="g5E-2y-Ebc" secondAttribute="leading" id="It7-OB-cMK"/>
+                <constraint firstItem="XIR-Wt-nJJ" firstAttribute="top" secondItem="dZ8-MO-wAk" secondAttribute="bottom" constant="1" id="Kc3-EZ-8nf"/>
+                <constraint firstAttribute="bottom" secondItem="qhp-2W-BBW" secondAttribute="bottom" id="O8J-UR-glw"/>
+                <constraint firstItem="qhp-2W-BBW" firstAttribute="leading" secondItem="g5E-2y-Ebc" secondAttribute="leading" id="Ryk-rX-Pmx"/>
+                <constraint firstItem="XIR-Wt-nJJ" firstAttribute="leading" secondItem="g5E-2y-Ebc" secondAttribute="leading" id="X4T-eZ-Em1"/>
+                <constraint firstItem="6db-H2-8jw" firstAttribute="top" secondItem="XIR-Wt-nJJ" secondAttribute="bottom" id="YSK-fm-ZhL"/>
+                <constraint firstItem="qhp-2W-BBW" firstAttribute="top" secondItem="dZ8-MO-wAk" secondAttribute="bottom" constant="38" id="rlT-mX-PmY"/>
+                <constraint firstItem="6db-H2-8jw" firstAttribute="top" secondItem="XIR-Wt-nJJ" secondAttribute="bottom" id="tQO-9z-MB9"/>
+                <constraint firstAttribute="trailing" secondItem="qhp-2W-BBW" secondAttribute="trailing" id="wM8-Pf-2ni"/>
+                <constraint firstAttribute="trailing" secondItem="6db-H2-8jw" secondAttribute="trailing" id="ynV-UM-HVS"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Emoji1" width="33" height="26"/>
+        <image name="Emoji1_Selected" width="33" height="26"/>
+        <image name="Emoji2" width="39" height="31"/>
+        <image name="Emoji2_Selected" width="39" height="31"/>
+        <image name="Emoji3" width="41" height="33"/>
+        <image name="Emoji3_Selected" width="41" height="33"/>
+        <image name="Emoji4" width="41" height="33"/>
+        <image name="Emoji4_Selected" width="41" height="33"/>
+        <image name="WhiteChatCamera" width="27" height="21"/>
+        <image name="WhiteChatEmoticon" width="25" height="25"/>
+        <image name="WhiteChatLoc" width="17" height="26"/>
+        <image name="WhiteChatPen" width="23" height="23"/>
+        <image name="WhiteChatSend" width="28" height="22"/>
+        <image name="WhiteChatTrash" width="19" height="25"/>
+        <image name="WhiteChatVideo" width="33" height="20"/>
+        <image name="WhiteChatVoice" width="17" height="30"/>
+        <image name="mic_sel" width="50" height="50"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

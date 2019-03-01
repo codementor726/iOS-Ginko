@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScanMeViewController">
+            <connections>
+                <outlet property="borderHeight" destination="xP5-11-JnQ" id="d10-8Y-VaE"/>
+                <outlet property="borderView" destination="YYp-K5-17L" id="iEv-KV-mY0"/>
+                <outlet property="navView" destination="ZX6-td-gl2" id="iHA-Cb-lUh"/>
+                <outlet property="qrImageView" destination="3aI-9l-8lB" id="1mO-nj-h38"/>
+                <outlet property="view" destination="iN0-l3-epB" id="RmZ-hE-BPQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3aI-9l-8lB">
+                    <rect key="frame" x="50" y="90" width="220" height="344"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select to scan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daA-Iq-1Mm">
+                    <rect key="frame" x="57" y="438" width="206" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Dg5-sI-8Op"/>
+                        <constraint firstAttribute="width" constant="206" id="bWb-WM-ecc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                    <color key="textColor" red="0.4941176471" green="0.3411764706" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dots" translatesAutoresizingMaskIntoConstraints="NO" id="O1W-gF-rXO">
+                    <rect key="frame" x="135" y="468" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="NNw-Wx-iMx"/>
+                        <constraint firstAttribute="width" constant="50" id="kua-Yg-JS6"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s1M-GG-2Rd">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="519-EB-XUK">
+                            <rect key="frame" x="138" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="F9o-zD-ZU0"/>
+                                <constraint firstAttribute="width" constant="44" id="fjP-tv-5B4"/>
+                            </constraints>
+                            <state key="normal" image="camera_scanme"/>
+                            <connections>
+                                <action selector="onCamera:" destination="-1" eventType="touchUpInside" id="sRy-7l-dCH"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYp-K5-17L">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="xP5-11-JnQ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="519-EB-XUK" firstAttribute="centerY" secondItem="s1M-GG-2Rd" secondAttribute="centerY" id="W1v-8o-EIe"/>
+                        <constraint firstAttribute="height" constant="44" id="czZ-qf-ISc"/>
+                        <constraint firstItem="519-EB-XUK" firstAttribute="centerX" secondItem="s1M-GG-2Rd" secondAttribute="centerX" id="gXu-Jg-c1G"/>
+                        <constraint firstItem="YYp-K5-17L" firstAttribute="top" secondItem="s1M-GG-2Rd" secondAttribute="top" id="kcd-HQ-ave"/>
+                        <constraint firstAttribute="trailing" secondItem="YYp-K5-17L" secondAttribute="trailing" id="lAa-Ds-HGN"/>
+                        <constraint firstItem="YYp-K5-17L" firstAttribute="leading" secondItem="s1M-GG-2Rd" secondAttribute="leading" id="yTd-Lx-6jE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="O1W-gF-rXO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1j6-94-0Fi"/>
+                <constraint firstItem="3aI-9l-8lB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="4jk-P8-20q"/>
+                <constraint firstItem="daA-Iq-1Mm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="CwU-IU-Zjd"/>
+                <constraint firstItem="s1M-GG-2Rd" firstAttribute="top" secondItem="3aI-9l-8lB" secondAttribute="bottom" constant="90" id="IAT-sq-OTS"/>
+                <constraint firstItem="O1W-gF-rXO" firstAttribute="top" secondItem="daA-Iq-1Mm" secondAttribute="bottom" constant="9" id="JxR-9N-VAR"/>
+                <constraint firstAttribute="trailing" secondItem="3aI-9l-8lB" secondAttribute="trailing" constant="50" id="KwF-WD-9jB"/>
+                <constraint firstAttribute="trailing" secondItem="s1M-GG-2Rd" secondAttribute="trailing" id="Yn9-RY-oSs"/>
+                <constraint firstItem="3aI-9l-8lB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="90" id="cEj-or-Yrq"/>
+                <constraint firstAttribute="bottom" secondItem="s1M-GG-2Rd" secondAttribute="bottom" id="hQi-ny-StR"/>
+                <constraint firstItem="s1M-GG-2Rd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mV6-kI-f0F"/>
+                <constraint firstItem="s1M-GG-2Rd" firstAttribute="top" secondItem="O1W-gF-rXO" secondAttribute="bottom" constant="6" id="rY0-65-LbI"/>
+            </constraints>
+            <point key="canvasLocation" x="280" y="370"/>
+        </view>
+        <view contentMode="scaleToFill" id="ZX6-td-gl2">
+            <rect key="frame" x="0.0" y="0.0" width="278" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scan Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLJ-Ib-IgF">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clX-tV-2Ko">
+                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="BackArrow"/>
+                    <connections>
+                        <action selector="onBack:" destination="-1" eventType="touchUpInside" id="yhr-Pt-2Hn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.76862745098039209" green="1" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="251" y="19"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BackArrow" width="13" height="21"/>
+        <image name="Dots" width="40" height="63"/>
+        <image name="camera_scanme" width="41" height="32"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

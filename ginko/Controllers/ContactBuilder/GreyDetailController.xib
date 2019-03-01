@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GreyDetailController">
+            <connections>
+                <outlet property="addFieldButton2" destination="Lvw-HI-fjg" id="ajg-pT-xUs"/>
+                <outlet property="addFieldTable" destination="PVF-Xu-YBI" id="ICc-KM-njj"/>
+                <outlet property="addFieldView" destination="Ydk-ca-ZjY" id="UeR-uG-gJC"/>
+                <outlet property="bottomSpacing" destination="HUA-VK-MO1" id="TBS-jC-uY9"/>
+                <outlet property="btGreyFavorite" destination="joI-sE-E3C" id="xns-yY-nyJ"/>
+                <outlet property="btnAddInfo" destination="7Dv-ZJ-Q0V" id="fIx-f2-A1y"/>
+                <outlet property="btnAvatar" destination="uYo-dQ-KNA" id="fpk-Rb-7cQ"/>
+                <outlet property="btnBack" destination="pgV-Bn-VUW" id="opB-bp-GZN"/>
+                <outlet property="btnClose" destination="rsq-s5-WmM" id="IJw-1e-fM2"/>
+                <outlet property="btnDel" destination="uAd-CL-s9e" id="BB3-pd-Kb5"/>
+                <outlet property="btnDone" destination="svy-5l-NfJ" id="xYn-TN-E64"/>
+                <outlet property="btnEdit" destination="bqW-qc-ts8" id="rsF-rt-RC4"/>
+                <outlet property="btnEditInfo" destination="6PP-M4-ZmV" id="NTW-ZV-Zrc"/>
+                <outlet property="btnEntity" destination="hyP-Al-25r" id="zg4-XL-Hb5"/>
+                <outlet property="btnHome" destination="yvC-ul-o2I" id="vVH-00-Zfk"/>
+                <outlet property="btnNotes" destination="F2k-oA-pAU" id="UBu-n9-YNH"/>
+                <outlet property="btnRemove" destination="VX7-lp-DfE" id="xqb-6h-UPx"/>
+                <outlet property="btnWork" destination="1lR-53-maU" id="mi6-MR-Fbi"/>
+                <outlet property="greyDetailsScrollView" destination="oHC-EP-oFt" id="8bw-V1-LFx"/>
+                <outlet property="imgAvatar" destination="Ydb-BI-M69" id="Dna-f1-sYy"/>
+                <outlet property="lblContacttype" destination="Rwd-9d-TgJ" id="66M-jy-jPK"/>
+                <outlet property="lblTitle" destination="3hn-Kk-4Qo" id="8mp-Rd-JIB"/>
+                <outlet property="navView" destination="qZk-UP-fft" id="wRI-hL-dLT"/>
+                <outlet property="profileLogoContainerView" destination="bXO-34-rRi" id="wye-83-vTS"/>
+                <outlet property="profileLogoImageView" destination="ZVI-to-p4r" id="oni-vg-8yq"/>
+                <outlet property="profilelogoPreView" destination="LMQ-xc-E3O" id="ysX-w7-kSD"/>
+                <outlet property="txtFirstName" destination="xw7-RD-7wF" id="3fv-r4-2Ak"/>
+                <outlet property="txtLastName" destination="026-xO-tyz" id="abb-LG-uxt"/>
+                <outlet property="txtName" destination="AIm-LF-Yyv" id="X6s-R4-JKh"/>
+                <outlet property="view" destination="20T-rL-kPs" id="aTi-w2-h1V"/>
+                <outlet property="viewFirstCell" destination="RpC-y3-3JE" id="ujI-lz-ODm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="20T-rL-kPs">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oHC-EP-oFt">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="456"/>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tbZ-ul-AkC">
+                    <rect key="frame" x="0.0" y="456" width="320" height="48"/>
+                    <subviews>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SoU-bR-3sg">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAd-CL-s9e" userLabel="Button - Delete">
+                            <rect key="frame" x="24" y="1" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="48" id="E7A-N1-kmz"/>
+                                <constraint firstAttribute="height" constant="48" id="qyf-3D-Y6Y"/>
+                            </constraints>
+                            <state key="normal" image="TrashIcon"/>
+                            <connections>
+                                <action selector="onDel:" destination="-1" eventType="touchUpInside" id="KIG-ua-iVI"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2k-oA-pAU" userLabel="Button - Notes">
+                            <rect key="frame" x="136" y="1" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="48" id="Zy9-sE-eLv"/>
+                                <constraint firstAttribute="height" constant="48" id="eR9-7A-iTn"/>
+                            </constraints>
+                            <state key="normal" image="infoDetails">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onNotes:" destination="-1" eventType="touchUpInside" id="mf0-ai-jyW"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dv-ZJ-Q0V" userLabel="Button - editInfo">
+                            <rect key="frame" x="248" y="0.0" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="7V5-Vw-pw7"/>
+                                <constraint firstAttribute="width" constant="48" id="WlG-Pe-jsS"/>
+                            </constraints>
+                            <state key="normal" image="add_profile_info_item_button">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onInfo:" destination="-1" eventType="touchUpInside" id="3Sd-QF-LZU"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VX7-lp-DfE" userLabel="Button - Remove">
+                            <rect key="frame" x="24" y="0.0" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="8VC-XQ-eRp"/>
+                                <constraint firstAttribute="width" constant="48" id="yQg-rV-5eL"/>
+                            </constraints>
+                            <state key="normal" image="TrashIcon"/>
+                            <connections>
+                                <action selector="onRemove:" destination="-1" eventType="touchUpInside" id="4Gg-9u-XWT"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6PP-M4-ZmV" userLabel="Button - editInfo">
+                            <rect key="frame" x="248" y="0.0" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="1YG-fd-s5I"/>
+                                <constraint firstAttribute="width" constant="48" id="2LD-mG-kCW"/>
+                            </constraints>
+                            <state key="normal" image="add_profile_info_item_button">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onInfo:" destination="-1" eventType="touchUpInside" id="1UE-F5-1xR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="26A-pi-fev"/>
+                        <constraint firstAttribute="trailing" secondItem="7Dv-ZJ-Q0V" secondAttribute="trailing" constant="24" id="3le-l4-yBc"/>
+                        <constraint firstAttribute="bottom" secondItem="F2k-oA-pAU" secondAttribute="bottom" constant="-1" id="3u5-lk-uCv"/>
+                        <constraint firstItem="F2k-oA-pAU" firstAttribute="centerX" secondItem="tbZ-ul-AkC" secondAttribute="centerX" id="6hv-iC-z5n"/>
+                        <constraint firstItem="SoU-bR-3sg" firstAttribute="leading" secondItem="tbZ-ul-AkC" secondAttribute="leading" id="8ET-Xo-zJl"/>
+                        <constraint firstItem="F2k-oA-pAU" firstAttribute="top" secondItem="tbZ-ul-AkC" secondAttribute="top" constant="1" id="8XI-VT-4x0"/>
+                        <constraint firstItem="uAd-CL-s9e" firstAttribute="top" secondItem="tbZ-ul-AkC" secondAttribute="top" constant="1" id="8Xl-lL-4p5"/>
+                        <constraint firstAttribute="trailing" secondItem="6PP-M4-ZmV" secondAttribute="trailing" constant="24" id="C6V-26-w1R"/>
+                        <constraint firstItem="SoU-bR-3sg" firstAttribute="centerX" secondItem="tbZ-ul-AkC" secondAttribute="centerX" id="HDC-qR-n6y"/>
+                        <constraint firstAttribute="bottom" secondItem="uAd-CL-s9e" secondAttribute="bottom" constant="-1" id="N31-sR-CoS"/>
+                        <constraint firstItem="SoU-bR-3sg" firstAttribute="top" secondItem="tbZ-ul-AkC" secondAttribute="top" id="Qar-vj-LgA"/>
+                        <constraint firstItem="uAd-CL-s9e" firstAttribute="leading" secondItem="tbZ-ul-AkC" secondAttribute="leading" constant="24" id="T0E-sA-dra"/>
+                        <constraint firstAttribute="trailing" secondItem="SoU-bR-3sg" secondAttribute="trailing" id="VfF-jD-Omc"/>
+                        <constraint firstAttribute="bottom" secondItem="7Dv-ZJ-Q0V" secondAttribute="bottom" id="dbb-Ga-W1e"/>
+                        <constraint firstItem="SoU-bR-3sg" firstAttribute="centerY" secondItem="tbZ-ul-AkC" secondAttribute="centerY" id="fpV-mA-jM0"/>
+                        <constraint firstItem="7Dv-ZJ-Q0V" firstAttribute="top" secondItem="tbZ-ul-AkC" secondAttribute="top" id="jKk-F1-YgA"/>
+                        <constraint firstAttribute="bottom" secondItem="SoU-bR-3sg" secondAttribute="bottom" id="jS7-Ig-rf0"/>
+                        <constraint firstItem="VX7-lp-DfE" firstAttribute="leading" secondItem="tbZ-ul-AkC" secondAttribute="leading" constant="24" id="qUx-Zh-sJV"/>
+                        <constraint firstAttribute="bottom" secondItem="VX7-lp-DfE" secondAttribute="bottom" id="tAC-YT-oBd"/>
+                        <constraint firstAttribute="bottom" secondItem="6PP-M4-ZmV" secondAttribute="bottom" id="tPl-P3-H2g"/>
+                        <constraint firstItem="VX7-lp-DfE" firstAttribute="top" secondItem="tbZ-ul-AkC" secondAttribute="top" id="wZK-eR-0Pb"/>
+                        <constraint firstItem="6PP-M4-ZmV" firstAttribute="top" secondItem="tbZ-ul-AkC" secondAttribute="top" id="zR1-WQ-zlI"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ydk-ca-ZjY">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PVF-Xu-YBI">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="456"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="610-1G-0Bf"/>
+                                <outlet property="delegate" destination="-1" id="gR4-2T-DSL"/>
+                            </connections>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lvw-HI-fjg">
+                            <rect key="frame" x="248" y="456" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="48" id="mV8-b5-o1v"/>
+                                <constraint firstAttribute="height" constant="48" id="mmE-uX-KNh"/>
+                            </constraints>
+                            <state key="normal" image="remove_profile_info_item_button"/>
+                            <connections>
+                                <action selector="hideAddFieldView:" destination="-1" eventType="touchUpInside" id="lut-0k-7WY"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.020103377525252486" green="0.0063680745921984956" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Lvw-HI-fjg" secondAttribute="trailing" constant="24" id="6r4-Hg-aHz"/>
+                        <constraint firstItem="Lvw-HI-fjg" firstAttribute="top" secondItem="PVF-Xu-YBI" secondAttribute="bottom" id="LNz-WC-BUc"/>
+                        <constraint firstItem="PVF-Xu-YBI" firstAttribute="top" secondItem="Ydk-ca-ZjY" secondAttribute="top" id="RdL-34-KVz"/>
+                        <constraint firstItem="Lvw-HI-fjg" firstAttribute="top" secondItem="PVF-Xu-YBI" secondAttribute="bottom" id="d94-cH-BsZ"/>
+                        <constraint firstItem="PVF-Xu-YBI" firstAttribute="leading" secondItem="Ydk-ca-ZjY" secondAttribute="leading" id="eZo-Ka-mrs"/>
+                        <constraint firstAttribute="trailing" secondItem="PVF-Xu-YBI" secondAttribute="trailing" id="fat-va-LZM"/>
+                        <constraint firstAttribute="bottom" secondItem="Lvw-HI-fjg" secondAttribute="bottom" id="zTJ-6c-CNE"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LMQ-xc-E3O">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68C-4G-mP0">
+                            <rect key="frame" x="274" y="19" width="38" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="Close_wite"/>
+                            <connections>
+                                <action selector="onCloseProfilelogoPreview:" destination="-1" eventType="touchUpInside" id="lED-gq-hdJ"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bXO-34-rRi">
+                            <rect key="frame" x="40" y="120" width="240" height="240"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZVI-to-p4r">
+                                    <rect key="frame" x="4" y="4" width="232" height="232"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                            </subviews>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.60021551719999999" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="oHC-EP-oFt" firstAttribute="centerX" secondItem="20T-rL-kPs" secondAttribute="centerX" id="7Jw-QD-sU7"/>
+                <constraint firstItem="tbZ-ul-AkC" firstAttribute="leading" secondItem="20T-rL-kPs" secondAttribute="leading" id="97f-HB-gsP"/>
+                <constraint firstItem="tbZ-ul-AkC" firstAttribute="top" secondItem="oHC-EP-oFt" secondAttribute="bottom" id="BdI-OM-j8l"/>
+                <constraint firstItem="oHC-EP-oFt" firstAttribute="leading" secondItem="20T-rL-kPs" secondAttribute="leading" id="Bej-aW-GNA"/>
+                <constraint firstAttribute="trailing" secondItem="Ydk-ca-ZjY" secondAttribute="trailing" id="CCY-f9-OFW"/>
+                <constraint firstAttribute="trailing" secondItem="tbZ-ul-AkC" secondAttribute="trailing" id="Fw6-l7-yp4"/>
+                <constraint firstAttribute="bottom" secondItem="tbZ-ul-AkC" secondAttribute="bottom" id="HUA-VK-MO1"/>
+                <constraint firstItem="Ydk-ca-ZjY" firstAttribute="centerX" secondItem="20T-rL-kPs" secondAttribute="centerX" id="JnB-Cv-UK1"/>
+                <constraint firstItem="tbZ-ul-AkC" firstAttribute="top" secondItem="oHC-EP-oFt" secondAttribute="bottom" id="LPc-Kk-Hgf"/>
+                <constraint firstAttribute="trailing" secondItem="oHC-EP-oFt" secondAttribute="trailing" id="PD1-Rk-hGn"/>
+                <constraint firstAttribute="bottom" secondItem="Ydk-ca-ZjY" secondAttribute="bottom" id="VJ5-PU-jx3"/>
+                <constraint firstItem="Ydk-ca-ZjY" firstAttribute="top" secondItem="20T-rL-kPs" secondAttribute="top" id="WdZ-Rz-9L8"/>
+                <constraint firstItem="Ydk-ca-ZjY" firstAttribute="leading" secondItem="20T-rL-kPs" secondAttribute="leading" id="ePy-XL-Fkf"/>
+                <constraint firstItem="Ydk-ca-ZjY" firstAttribute="centerY" secondItem="20T-rL-kPs" secondAttribute="centerY" id="gGs-rs-AGw"/>
+                <constraint firstItem="oHC-EP-oFt" firstAttribute="top" secondItem="20T-rL-kPs" secondAttribute="top" id="h2I-cG-tvy"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="-219" y="438"/>
+        </view>
+        <view contentMode="scaleToFill" id="qZk-UP-fft">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NavBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="cP6-TX-wcV">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Contact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hn-Kk-4Qo">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="0.11969742178916931" green="0.25114348530769348" blue="0.14153957366943359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgV-Bn-VUW" userLabel="Button - Back">
+                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="BackArrow"/>
+                    <connections>
+                        <action selector="onBack:" destination="-1" eventType="touchUpInside" id="nNf-bG-Lqs"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsq-s5-WmM" userLabel="Button - Close">
+                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="close">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onClose:" destination="-1" eventType="touchUpInside" id="hUc-Fa-hK5"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svy-5l-NfJ" userLabel="Button - Done">
+                    <rect key="frame" x="276" y="0.0" width="44" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" image="Checkmark">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onDone:" destination="-1" eventType="touchUpInside" id="p6N-P8-BLS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.90196078430000004" green="0.98039215690000003" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-211" y="-29"/>
+        </view>
+        <view tag="101" contentMode="scaleToFill" id="RpC-y3-3JE">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="188"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fe8-On-oTA">
+                    <rect key="frame" x="0.0" y="80" width="320" height="88"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqW-qc-ts8" userLabel="Button - edit">
+                            <rect key="frame" x="14" y="22" width="44" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="EditIcon">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onEdit:" destination="-1" eventType="touchUpInside" id="OZX-BF-Prr"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyP-Al-25r" userLabel="Button - entity">
+                            <rect key="frame" x="137" y="19" width="46" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="EntityIcon">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="EntityIconSelected"/>
+                            <connections>
+                                <action selector="onType:" destination="-1" eventType="touchUpInside" id="vA0-Zg-HbA"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lR-53-maU" userLabel="Button - work">
+                            <rect key="frame" x="202" y="19" width="46" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="WorkIcon">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="WorkIconSelected"/>
+                            <connections>
+                                <action selector="onType:" destination="-1" eventType="touchUpInside" id="Kat-B4-Gaf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="30" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvC-ul-o2I" userLabel="Button - home">
+                            <rect key="frame" x="264" y="19" width="46" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="HomeIcon">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="HomeIconSelected"/>
+                            <connections>
+                                <action selector="onType:" destination="-1" eventType="touchUpInside" id="69Q-4L-ezB"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Entity, Work or Personal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rwd-9d-TgJ">
+                            <rect key="frame" x="134" y="60" width="176" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joI-sE-E3C">
+                            <rect key="frame" x="72" y="21" width="45" height="45"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="Star_unselected"/>
+                            <state key="selected" image="StarIconSelected"/>
+                            <connections>
+                                <action selector="onFavorite:" destination="-1" eventType="touchUpInside" id="RQL-8o-gZO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="greyblank" translatesAutoresizingMaskIntoConstraints="NO" id="Ydb-BI-M69">
+                    <rect key="frame" x="12" y="17" width="80" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYo-dQ-KNA" userLabel="Button - photo">
+                    <rect key="frame" x="12" y="17" width="80" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onAvatar:" destination="-1" eventType="touchUpInside" id="exy-Hh-0K0"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" tag="99" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="AIm-LF-Yyv" userLabel="Round Style Text Field - Name">
+                    <rect key="frame" x="112" y="29" width="184" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="CoP-zs-6Rd"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" tag="99" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xw7-RD-7wF" userLabel="Round Style Text Field - Name">
+                    <rect key="frame" x="112" y="29" width="184" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Sle-bx-kei"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" tag="98" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="026-xO-tyz" userLabel="Round Style Text Field - Name">
+                    <rect key="frame" x="112" y="60" width="184" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="bhL-Ko-hqt"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Seperator.png" translatesAutoresizingMaskIntoConstraints="NO" id="erb-Gj-Ik2">
+                    <rect key="frame" x="12" y="174" width="296" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7L1-iU-1oB">
+                    <rect key="frame" x="16" y="20" width="76" height="77"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="onOpenProfilelogoPreview:" destination="-1" eventType="touchUpInside" id="3NQ-46-Zu1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-219" y="143"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BackArrow" width="13" height="21"/>
+        <image name="Checkmark" width="23" height="15"/>
+        <image name="Close_wite" width="21" height="27"/>
+        <image name="EditIcon" width="20" height="23"/>
+        <image name="EntityIcon" width="27" height="24"/>
+        <image name="EntityIconSelected" width="27" height="24"/>
+        <image name="HomeIcon" width="25" height="25"/>
+        <image name="HomeIconSelected" width="25" height="25"/>
+        <image name="NavBar.png" width="640" height="140"/>
+        <image name="Seperator.png" width="437" height="1"/>
+        <image name="StarIconSelected" width="32" height="32"/>
+        <image name="Star_unselected" width="32" height="32"/>
+        <image name="TrashIcon" width="21" height="27"/>
+        <image name="WorkIcon" width="24" height="21"/>
+        <image name="WorkIconSelected" width="24" height="21"/>
+        <image name="add_profile_info_item_button" width="41" height="41"/>
+        <image name="close" width="17" height="17"/>
+        <image name="greyblank" width="160" height="160"/>
+        <image name="infoDetails" width="24" height="27"/>
+        <image name="remove_profile_info_item_button" width="41" height="41"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[YYYEntityPreivewEditViewController_ saveCurrentData]:YYYEntityPreivewEditViewController_.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "imvForeground.bounds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SetupLocationer setupNext]:SetupLocationer.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[[AppDelegate sharedDelegate].strSetupPage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

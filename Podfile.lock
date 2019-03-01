@@ -1,0 +1,30 @@
+PODS:
+  - BBBadgeBarButtonItem (1.2)
+  - CCBottomRefreshControl (0.5.2)
+  - libjingle_peerconnection (11177.2.0)
+  - SAMTextView (0.2.2)
+  - SocketRocket (0.5.1)
+  - TTTAttributedLabel (2.0.0)
+  - UIView+Borders (0.0.2)
+
+DEPENDENCIES:
+  - BBBadgeBarButtonItem
+  - CCBottomRefreshControl
+  - libjingle_peerconnection
+  - SAMTextView
+  - SocketRocket
+  - TTTAttributedLabel
+  - UIView+Borders
+
+SPEC CHECKSUMS:
+  BBBadgeBarButtonItem: c2fbca0bff18e21b70defc9438a8a5048008e7ca
+  CCBottomRefreshControl: 389780b4488321c91d18f66a6da5ef9606df6de5
+  libjingle_peerconnection: 3458f646ddd61f08a9f3a0c43fb01fff5c165eb8
+  SAMTextView: 979c43bb1fa5859ddfbfeb35e9c296a2b0ec55fd
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  UIView+Borders: d632c8bef679e7f98e913b569e972858742841ce
+
+PODFILE CHECKSUM: 85b1c67d4851091c8e89f16c4e002b093dd32bef
+
+COCOAPODS: 1.2.0

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="ConnectNonGinkoUserCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lisa Lewis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUI-pt-8gI">
+                        <rect key="frame" x="20" y="15" width="209" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="9W5-zD-kgN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCd-0W-f9R">
+                        <rect key="frame" x="237" y="46" width="63" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="63" id="blh-0i-n7b"/>
+                        </constraints>
+                        <state key="normal" image="ginko_invite_button"/>
+                        <connections>
+                            <action selector="invite:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zpb-MC-jAY"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1234567890" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPw-eD-pAo">
+                        <rect key="frame" x="20" y="36" width="209" height="52"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.40000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="aaa@aaa.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91r-um-pNd">
+                        <rect key="frame" x="20" y="89" width="209" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="91r-um-pNd" firstAttribute="top" secondItem="dPw-eD-pAo" secondAttribute="bottom" constant="1" id="05B-4w-DOf"/>
+                    <constraint firstAttribute="trailing" secondItem="xCd-0W-f9R" secondAttribute="trailing" constant="20" id="2lo-9x-ZvK"/>
+                    <constraint firstItem="xCd-0W-f9R" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ame-Jt-Nef"/>
+                    <constraint firstItem="dPw-eD-pAo" firstAttribute="top" secondItem="HUI-pt-8gI" secondAttribute="bottom" id="EdX-0z-Udm"/>
+                    <constraint firstItem="HUI-pt-8gI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="KZl-LD-qOH"/>
+                    <constraint firstItem="xCd-0W-f9R" firstAttribute="leading" secondItem="91r-um-pNd" secondAttribute="trailing" constant="8" id="O4G-km-63W"/>
+                    <constraint firstItem="HUI-pt-8gI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Ppq-XU-nI2"/>
+                    <constraint firstItem="xCd-0W-f9R" firstAttribute="leading" secondItem="dPw-eD-pAo" secondAttribute="trailing" constant="8" id="aWU-ec-ojW"/>
+                    <constraint firstItem="91r-um-pNd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="bL8-Kw-eF2"/>
+                    <constraint firstItem="dPw-eD-pAo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="eYL-dh-ahK"/>
+                    <constraint firstItem="xCd-0W-f9R" firstAttribute="leading" secondItem="HUI-pt-8gI" secondAttribute="trailing" constant="8" id="hLT-In-ISn"/>
+                    <constraint firstAttribute="bottom" secondItem="91r-um-pNd" secondAttribute="bottom" constant="13" id="xXl-ny-OPx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="emailLabel" destination="91r-um-pNd" id="3gh-RO-uJ1"/>
+                <outlet property="inviteButton" destination="xCd-0W-f9R" id="yFf-Wz-DB9"/>
+                <outlet property="nameLabel" destination="HUI-pt-8gI" id="9RS-lk-oSu"/>
+                <outlet property="phoneLabel" destination="dPw-eD-pAo" id="Lq7-Fb-lyK"/>
+            </connections>
+            <point key="canvasLocation" x="269" y="203"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ginko_invite_button" width="63" height="27"/>
+    </resources>
+</document>

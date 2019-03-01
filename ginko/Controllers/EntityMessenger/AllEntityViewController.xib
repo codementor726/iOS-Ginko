@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AllEntityViewController">
+            <connections>
+                <outlet property="tableView" destination="qFT-Jh-u5X" id="0yg-di-uHS"/>
+                <outlet property="view" destination="kPA-Qb-Ibj" id="75D-rT-PK4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="kPA-Qb-Ibj">
+            <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qFT-Jh-u5X">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="4Qu-DJ-YB2"/>
+                        <outlet property="delegate" destination="-1" id="6hc-Oj-KhM"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qFT-Jh-u5X" firstAttribute="top" secondItem="kPA-Qb-Ibj" secondAttribute="top" id="8Zb-oC-bZ4"/>
+                <constraint firstItem="qFT-Jh-u5X" firstAttribute="centerY" secondItem="kPA-Qb-Ibj" secondAttribute="centerY" id="BGo-ME-tFE"/>
+                <constraint firstItem="qFT-Jh-u5X" firstAttribute="leading" secondItem="kPA-Qb-Ibj" secondAttribute="leading" id="XiH-lE-Q2k"/>
+                <constraint firstItem="qFT-Jh-u5X" firstAttribute="centerX" secondItem="kPA-Qb-Ibj" secondAttribute="centerX" id="Xo3-oW-Ep4"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="190" y="299"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

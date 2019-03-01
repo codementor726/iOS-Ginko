@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoViewController">
+            <connections>
+                <outlet property="cameraButton" destination="tdL-IQ-oKm" id="0p9-0J-6Il"/>
+                <outlet property="descLabel" destination="08p-44-Pg7" id="DbT-RV-elt"/>
+                <outlet property="itemForSkip" destination="3JB-Xi-jc5" id="1HQ-IB-2TM"/>
+                <outlet property="leafImageView" destination="XTP-hf-eki" id="DY5-TT-lko"/>
+                <outlet property="pictureButton" destination="vjh-lQ-hMS" id="Ahl-p1-DgY"/>
+                <outlet property="scvArchive" destination="E7y-OR-1xO" id="u6t-ru-nxA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewArchive" destination="eVd-92-6cx" id="PIV-as-zSQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SetupLeaf.png" id="XTP-hf-eki">
+                    <rect key="frame" x="20" y="8" width="301" height="333"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tdL-IQ-oKm" userLabel="Btn - Take a Video">
+                    <rect key="frame" x="66" y="183" width="55" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" image="BtnVideoSetup.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onBtnTake:" destination="-1" eventType="touchUpInside" id="4gL-48-JAV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vjh-lQ-hMS" userLabel="Btn - Choose a Video">
+                    <rect key="frame" x="197" y="183" width="50" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" image="BtnPhotoSetup.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onBtnChoose:" destination="-1" eventType="touchUpInside" id="b7f-dC-xeF"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose or Create a Short Film for your Personal Profile" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="08p-44-Pg7">
+                    <rect key="frame" x="0.0" y="39" width="320" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <color key="textColor" cyan="0.75" magenta="0.29999999999999999" yellow="1" black="0.16" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view hidden="YES" contentMode="scaleToFill" id="eVd-92-6cx">
+                    <rect key="frame" x="0.0" y="244" width="320" height="242"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VideoArchiveHome" id="V7s-x2-rJY">
+                            <rect key="frame" x="20" y="13" width="35" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Archive" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dm6-jA-8oV">
+                            <rect key="frame" x="58" y="12" width="154" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                            <color key="textColor" cyan="0.75" magenta="0.29999999999999999" yellow="1" black="0.16" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="E7y-OR-1xO">
+                            <rect key="frame" x="1" y="56" width="320" height="110"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+        </view>
+        <barButtonItem title="Skip" id="3JB-Xi-jc5">
+            <color key="tintColor" cyan="0.75" magenta="0.29999999999999999" yellow="1" black="0.16" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+            <connections>
+                <action selector="onBtnSkip:" destination="-1" id="3zs-vD-qBk"/>
+            </connections>
+        </barButtonItem>
+    </objects>
+    <resources>
+        <image name="BtnPhotoSetup.png" width="57" height="41"/>
+        <image name="BtnVideoSetup.png" width="109" height="67"/>
+        <image name="SetupLeaf.png" width="602" height="667"/>
+        <image name="VideoArchiveHome" width="41" height="41"/>
+    </resources>
+</document>

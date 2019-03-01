@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[ContactViewController performFetch]:ContactViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "lblSproutBadge.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ContactsMapViewController reloadMap]:ContactsMapViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "annotation.coordinate">
+            </PersistentString>
+            <PersistentString
+               value = "tabController.contacts">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ContactsListViewController isSelectedIndexPath:inTableView:]:ContactsListViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "contact.contact_id">
+            </PersistentString>
+            <PersistentString
+               value = "[ids containsObject:@1487]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ManageEntityViewController goNext:]:ManageEntityViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_fieldValuesArray[0][@&quot;Address&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[QNode insertLeadObject:withSatellites:]:QNode.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.centerLongitude">
+            </PersistentString>
+            <PersistentString
+               value = "self.region">
+            </PersistentString>
+            <PersistentString
+               value = "satellites.count">
+            </PersistentString>
+            <PersistentString
+               value = "self.centerLatitude">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ContactsMapViewController viewDidLoad]:ContactsMapViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "APPDELEGATE.currentLocation">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ContactsMapViewController removeAndAddAnnotations:oldAnnotations:]:ContactsMapViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.mapView.annotations">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[QNode insertObject:]:QNode.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "coord1">
+            </PersistentString>
+            <PersistentString
+               value = "self.leadObject">
+            </PersistentString>
+            <PersistentString
+               value = "self.leadObject.coordinate">
+            </PersistentString>
+            <PersistentString
+               value = "self.satellites">
+            </PersistentString>
+            <PersistentString
+               value = "self.count">
+            </PersistentString>
+            <PersistentString
+               value = "[QNode getMinDistance]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[QNode getObjectsInRegion:minNonClusteredSpan:]:QNode.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.cachedCluster">
+            </PersistentString>
+            <PersistentString
+               value = "self.leadObject">
+            </PersistentString>
+            <PersistentString
+               value = "self.region.span.latitudeDelta">
+            </PersistentString>
+            <PersistentString
+               value = "self.region">
+            </PersistentString>
+            <PersistentString
+               value = "self.region.span.longitudeDelta">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ContactsListViewController tableView:cellForRowAtIndexPath:]:ContactsListViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.selected">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ContactsMapViewController reloadAnnotations]:ContactsMapViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.mapView.annotations">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[QTree getObjectsInRegion:minNonClusteredSpan:]:QTree.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.rootNode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[QNode childNodeForObject:]:QNode.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "insertableObject.coordinate.latitude">
+            </PersistentString>
+            <PersistentString
+               value = "insertableObject.coordinate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ContactsMapViewController viewDidDisappear:]:ContactsMapViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.mapView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ExchangedInfoCell populateCellWithContact:]:ExchangedInfoCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "contact.contact">
+            </PersistentString>
+            <PersistentString
+               value = "appDelegate.exchangedList">
+            </PersistentString>
+            <PersistentString
+               value = "self.pingArea.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

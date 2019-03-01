@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[GreyDetailController textFieldShouldReturn:]:GreyDetailController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[textField superview]">
+            </PersistentString>
+            <PersistentString
+               value = "tblInfo indexPathForCell:cell].row + 1">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__38-[InviteViewController AddInvitation:]_block_invoke:InviteViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[[_responseObject objectForKey:@&quot;err&quot;] objectForKey:@&quot;errMsg&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PhotoViewController viewDidLoad]:PhotoViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.isCreate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PhotoCameraController loadView]:PhotoCameraController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "viewController.type">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PhotoPickerController initWithType:entityID:]:PhotoPickerController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.type">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__29-[IMVideoEditController trim]_block_invoke:IMVideoEditController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "exportSession.error">
+            </PersistentString>
+            <PersistentString
+               value = "exportSession.status">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[YYYEditProfileFieldViewController saveData]:YYYEditProfileFieldViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[[dictInfo objectForKey:@&quot;Rect&quot;] objectForKey:[lstField objectAtIndex:i]]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ELCAssetTablePicker viewDidLoad]:ELCAssetTablePicker.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.type">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[YYYEditProfileViewController_ btWorkClick:]:YYYEditProfileViewController_.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[dictWork count]">
+            </PersistentString>
+            <PersistentString
+               value = "[dictWork objectForKey:@&quot;Info&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PhotoViewController loadView]:PhotoViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "viewController.type">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[NotExchangedViewController setInitialBadges]:NotExchangedViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "appDelegate.exchangedList.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__48-[YYYPreviewProfileViewController_ loadUserInfo]_block_invoke:YYYPreviewProfileViewController_.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[_responseObject objectForKey:@&quot;data&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "_globalData.strWorkProfilePhoto">
+            </PersistentString>
+            <PersistentString
+               value = "_responseObject">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ContactViewController viewDidLoad]:ContactViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[AppDelegate sharedDelegate].strSetupPage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__38-[ProfileRequestController onApprove:]_block_invoke:ProfileRequestController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "appDelegate.type">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__34-[IMVideoEditController trimVideo]_block_invoke195:IMVideoEditController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "exportSession.status">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[VideoCameraController updateRecording]:VideoCameraController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "movieWriter.duration">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[VideoCameraController onLongPressGesture:]:VideoCameraController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "longGesture.state">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__40-[ContactViewController GetCBEmailValid]_block_invoke:ContactViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[[_responseObject objectForKey:@&quot;data&quot;] objectForKey:@&quot;new_chat_msg_num&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[EntityChatCell setMessageDict:]:EntityChatCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "lblSentTime.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ProfileRequestController onApprove:]:ProfileRequestController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[contactInfo objectForKey:@&quot;contact_id&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SetupLocationer setupNext]:SetupLocationer.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[AppDelegate sharedDelegate].strSetupPage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SetupLocationer configAfterSignIn:]:SetupLocationer.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[myInfo objectForKey:@&quot;setup_page&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PurpleDetailViewController setupUI]:PurpleDetailViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[dict objectForKey:@&quot;field_name&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "[dict objectForKey:@&quot;field_value&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__39-[YYYLoginViewController btLoginClick:]_block_invoke:YYYLoginViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[_responseObject objectForKey:@&quot;data&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[RequestViewController alertView:clickedButtonAtIndex:]:RequestViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "dict[@&quot;contact_type&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "dict[@&quot;entity_id&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "[dict objectForKey:@&quot;contact_id&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "contact_id">
+            </PersistentString>
+            <PersistentString
+               value = "[dict[@&quot;contact_type&quot;] integerValue]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[YYYChatViewController btDeleteClick:]:YYYChatViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "bubbleTable.lstSelected">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__67-[EntityAdminChatViewController sendMessage:image:voice:video:map:]_block_invoke:EntityAdminChatViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[dict objectForKey:@&quot;url&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "[dict objectForKey:@&quot;sent_time&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

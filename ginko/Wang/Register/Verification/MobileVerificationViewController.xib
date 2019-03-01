@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MobileVerificationViewController">
+            <connections>
+                <outlet property="countryButton" destination="Ap3-d9-09x" id="Dfy-6q-UtP"/>
+                <outlet property="countryCodeLabel" destination="eE0-Nc-DNB" id="0cF-hR-tmg"/>
+                <outlet property="phoneNumberTextField" destination="Pr2-K3-8Yr" id="yur-z6-C1n"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm your country and enter the phone number" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZX-iP-MC7">
+                    <rect key="frame" x="40" y="25" width="240" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="Dx2-0D-2se"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ComboArrow" translatesAutoresizingMaskIntoConstraints="NO" id="GvD-wp-RvD">
+                    <rect key="frame" x="271" y="102" width="9" height="4"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="69A-dh-MXX"/>
+                        <constraint firstAttribute="width" constant="9" id="hMt-KG-7kD"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eE0-Nc-DNB">
+                    <rect key="frame" x="40" y="134" width="42" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="nVb-XM-SVe"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="uD7-Ag-ZZl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ap3-d9-09x">
+                    <rect key="frame" x="40" y="85" width="240" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="9a4-Vu-klI"/>
+                    </constraints>
+                    <state key="normal" title="United States">
+                        <color key="titleColor" red="0.50588235294117645" green="0.77254901960784317" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectCountry:" destination="-1" eventType="touchUpInside" id="3Vd-18-l1P"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFR-l2-1zD">
+                    <rect key="frame" x="40" y="122" width="240" height="1"/>
+                    <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="LUs-nM-P3o"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOo-St-Y1a">
+                    <rect key="frame" x="40" y="172" width="240" height="1"/>
+                    <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="7Bk-Eo-VeG"/>
+                        <constraint firstAttribute="height" constant="1" id="n2y-li-u00"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pr2-K3-8Yr">
+                    <rect key="frame" x="90" y="135" width="190" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="SEl-v8-jId"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We'll send an SMS with a confirmation code to your phone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2o-pL-E8B">
+                    <rect key="frame" x="20" y="193" width="280" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NZX-iP-MC7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="3MK-uw-QxQ"/>
+                <constraint firstItem="K2o-pL-E8B" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="4ry-mV-b0W"/>
+                <constraint firstItem="Pr2-K3-8Yr" firstAttribute="leading" secondItem="eE0-Nc-DNB" secondAttribute="trailing" constant="8" id="I5r-Jk-lcf"/>
+                <constraint firstItem="eE0-Nc-DNB" firstAttribute="leading" secondItem="Ap3-d9-09x" secondAttribute="leading" id="Jzo-g5-64k"/>
+                <constraint firstItem="Pr2-K3-8Yr" firstAttribute="top" secondItem="Ap3-d9-09x" secondAttribute="bottom" constant="12" id="L1i-OB-Yrf"/>
+                <constraint firstItem="RFR-l2-1zD" firstAttribute="leading" secondItem="Ap3-d9-09x" secondAttribute="leading" id="MUR-ji-Fzd"/>
+                <constraint firstItem="NZX-iP-MC7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Msz-LR-PwG"/>
+                <constraint firstAttribute="trailing" secondItem="Ap3-d9-09x" secondAttribute="trailing" constant="40" id="R5m-Se-v1S"/>
+                <constraint firstItem="RFR-l2-1zD" firstAttribute="bottom" secondItem="Ap3-d9-09x" secondAttribute="bottom" id="S66-c0-mGw"/>
+                <constraint firstItem="eE0-Nc-DNB" firstAttribute="top" secondItem="RFR-l2-1zD" secondAttribute="bottom" constant="11" id="XHl-6b-okU"/>
+                <constraint firstItem="jOo-St-Y1a" firstAttribute="trailing" secondItem="RFR-l2-1zD" secondAttribute="trailing" id="bpX-mp-n8q"/>
+                <constraint firstItem="RFR-l2-1zD" firstAttribute="trailing" secondItem="Ap3-d9-09x" secondAttribute="trailing" id="c8A-Gg-HOb"/>
+                <constraint firstItem="jOo-St-Y1a" firstAttribute="leading" secondItem="RFR-l2-1zD" secondAttribute="leading" id="cv9-3p-Z3Y"/>
+                <constraint firstItem="Ap3-d9-09x" firstAttribute="top" secondItem="NZX-iP-MC7" secondAttribute="bottom" constant="19" id="dY6-r0-GiF"/>
+                <constraint firstItem="Pr2-K3-8Yr" firstAttribute="trailing" secondItem="Ap3-d9-09x" secondAttribute="trailing" id="f5g-1P-alR"/>
+                <constraint firstAttribute="trailing" secondItem="K2o-pL-E8B" secondAttribute="trailing" constant="20" id="gTY-AA-Ftv"/>
+                <constraint firstItem="Ap3-d9-09x" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="if0-0Z-ZBy"/>
+                <constraint firstItem="GvD-wp-RvD" firstAttribute="centerY" secondItem="Ap3-d9-09x" secondAttribute="centerY" id="pbm-mU-Xmk"/>
+                <constraint firstItem="jOo-St-Y1a" firstAttribute="bottom" secondItem="Pr2-K3-8Yr" secondAttribute="bottom" id="phL-eO-l5p"/>
+                <constraint firstItem="K2o-pL-E8B" firstAttribute="top" secondItem="Pr2-K3-8Yr" secondAttribute="bottom" constant="20" id="rap-fT-eMs"/>
+                <constraint firstItem="GvD-wp-RvD" firstAttribute="trailing" secondItem="Ap3-d9-09x" secondAttribute="trailing" id="tHq-rf-Maa"/>
+            </constraints>
+            <point key="canvasLocation" x="437" y="232"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ComboArrow" width="9" height="4"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

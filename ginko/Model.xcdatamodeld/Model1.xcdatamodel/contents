@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15F34" minimumToolsVersion="Xcode 4.3">
+    <entity name="Contact" representedClassName="Contact" syncable="YES">
+        <attribute name="contact_id" attributeType="String" syncable="YES"/>
+        <attribute name="contact_type" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="data" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Groups" representedClassName="Groups" syncable="YES">
+        <attribute name="contact_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contact_type" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="group_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group_name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="LocationOfEntity" representedClassName="LocationOfEntity" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="entity_Id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="first_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="is_follow" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="last_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="middle_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Message" representedClassName="Message" syncable="YES">
+        <attribute name="boardId" attributeType="Integer 64" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="content" attributeType="String" syncable="YES"/>
+        <attribute name="datetime" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="mediaFilePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageId" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="userId" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Users" inverseName="messages" inverseEntity="Users" syncable="YES"/>
+    </entity>
+    <entity name="SearchedContact" representedClassName="SearchedContact" syncable="YES">
+        <attribute name="contact_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="contact_type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="data" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="exchanged" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="first_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="found_time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="is_pending" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="last_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="middle_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="multi_Entity" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="profile_image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sharing_status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="contact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" syncable="YES"/>
+    </entity>
+    <entity name="Users" representedClassName="Users" syncable="YES">
+        <attribute name="userId" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="messages" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Message" inverseName="userId" inverseEntity="Message" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Contact" positionX="1701" positionY="-567" width="227" height="88"/>
+        <element name="LocationOfEntity" positionX="1656" positionY="-423" width="128" height="195"/>
+        <element name="Message" positionX="1915" positionY="-396" width="128" height="135"/>
+        <element name="SearchedContact" positionX="1602" positionY="-279" width="128" height="315"/>
+        <element name="Users" positionX="1458" positionY="-414" width="128" height="73"/>
+        <element name="Groups" positionX="1665" positionY="-414" width="128" height="105"/>
+    </elements>
+</model>

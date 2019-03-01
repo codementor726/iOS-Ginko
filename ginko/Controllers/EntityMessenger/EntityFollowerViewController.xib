@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EntityFollowerViewController">
+            <connections>
+                <outlet property="btFollow" destination="t5j-dH-HIt" id="qVE-Lu-YFt"/>
+                <outlet property="btInvite" destination="dzt-J8-rb7" id="YEW-wf-pbb"/>
+                <outlet property="btNotes" destination="KGh-Vo-dko" id="0O7-cm-ME8"/>
+                <outlet property="btPlay" destination="lw9-Sr-2ng" id="9jr-hS-gvS"/>
+                <outlet property="imvBackground" destination="d29-tk-1M5" id="cot-G3-3d0"/>
+                <outlet property="scvContent" destination="J78-D3-PsS" id="juJ-xc-Azk"/>
+                <outlet property="view" destination="BM1-ox-x7T" id="sjy-xK-w1u"/>
+                <outlet property="vwContent" destination="rJx-vD-hP4" id="wcL-YQ-74A"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="BM1-ox-x7T">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" id="rJx-vD-hP4">
+                    <rect key="frame" x="0.0" y="8" width="320" height="444"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="d29-tk-1M5">
+                            <rect key="frame" x="7" y="0.0" width="307" height="444"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="J78-D3-PsS">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="444"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="1Z6-By-Ypx" userLabel="VwBottom">
+                    <rect key="frame" x="0.0" y="454" width="320" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TabBar.png" id="l4p-5Z-HA1">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" red="0.49411764705882355" green="0.3411764705882353" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lw9-Sr-2ng">
+                            <rect key="frame" x="276" y="13" width="25" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="DetailPlay.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btPlayClick:" destination="-1" eventType="touchUpInside" id="dVN-7E-P53"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dzt-J8-rb7">
+                            <rect key="frame" x="67" y="10" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="Invite">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btInviteClick:" destination="-1" eventType="touchUpInside" id="1SZ-9X-bTi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KGh-Vo-dko">
+                            <rect key="frame" x="124" y="11" width="24" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="DetailComment">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btNotesClick:" destination="-1" eventType="touchUpInside" id="zy2-DD-Ssl"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="t5j-dH-HIt">
+                            <rect key="frame" x="15" y="10" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="leaf_line.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="leaf_solid.png"/>
+                            <connections>
+                                <action selector="btFollowClick:" destination="-1" eventType="touchUpInside" id="aOM-jr-zsK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="DetailComment" width="24" height="27"/>
+        <image name="DetailPlay.png" width="49" height="48"/>
+        <image name="Invite" width="28" height="30"/>
+        <image name="TabBar.png" width="640" height="106"/>
+        <image name="leaf_line.png" width="49" height="49"/>
+        <image name="leaf_solid.png" width="49" height="49"/>
+    </resources>
+</document>

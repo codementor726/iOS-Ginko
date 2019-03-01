@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateEntityViewController">
+            <connections>
+                <outlet property="artistButton" destination="z8y-ZJ-Yhg" id="LcN-gy-pFk"/>
+                <outlet property="brandButton" destination="C67-TE-iMZ" id="VhQ-Ov-PoR"/>
+                <outlet property="communityButton" destination="7Wm-4N-OYR" id="VB7-BQ-ugR"/>
+                <outlet property="companyButton" destination="FAc-Ym-fU2" id="pSb-l5-TBj"/>
+                <outlet property="entertainmentButton" destination="o5F-Jk-na5" id="SA5-bN-MB9"/>
+                <outlet property="localBusinessButton" destination="f6Q-PO-7JB" id="dNn-QN-d3d"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="f6Q-PO-7JB" customClass="ToggleButton">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="168"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="20" maxX="10" maxY="20"/>
+                    <state key="normal" title="Local Business or Place" image="entity_category_local_business">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="createLocalBusiness:" destination="-1" eventType="touchUpInside" id="L32-M0-rIn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="FAc-Ym-fU2" customClass="ToggleButton">
+                    <rect key="frame" x="160" y="0.0" width="160" height="168"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="20" maxX="10" maxY="20"/>
+                    <state key="normal" title="Company, Organization or Institution" image="entity_category_company">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="createCompany:" destination="-1" eventType="touchUpInside" id="HCx-eh-XZX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="C67-TE-iMZ" customClass="ToggleButton">
+                    <rect key="frame" x="0.0" y="168" width="160" height="168"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="20" maxX="10" maxY="20"/>
+                    <state key="normal" title="Brand or Product" image="entity_category_brand">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="createBrand:" destination="-1" eventType="touchUpInside" id="2M3-bN-rhZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="o5F-Jk-na5" customClass="ToggleButton">
+                    <rect key="frame" x="160" y="168" width="160" height="168"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="20" maxX="10" maxY="20"/>
+                    <state key="normal" title="Entertainment" image="entity_category_entertainment">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="createEntertainment:" destination="-1" eventType="touchUpInside" id="e5T-LY-1KO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="z8y-ZJ-Yhg" customClass="ToggleButton">
+                    <rect key="frame" x="0.0" y="336" width="160" height="168"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="20" maxX="10" maxY="20"/>
+                    <state key="normal" title="Artist, Band or Public Figure" image="entity_category_artist">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="createArtist:" destination="-1" eventType="touchUpInside" id="gIa-gV-I6h"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="7Wm-4N-OYR" customClass="ToggleButton">
+                    <rect key="frame" x="160" y="336" width="160" height="168"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="20" maxX="10" maxY="20"/>
+                    <state key="normal" title="Cause or Community" image="entity_category_community">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="createCommunity:" destination="-1" eventType="touchUpInside" id="zbv-RN-kgB"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t8w-VE-pfR">
+                    <rect key="frame" x="0.0" y="167" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="qLc-Pu-nFh"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IcZ-ik-SKA">
+                    <rect key="frame" x="0.0" y="335" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="o6G-NO-FDg"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fcP-x4-x3W">
+                    <rect key="frame" x="159" y="0.0" width="1" height="504"/>
+                    <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="oud-Os-6Ld"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="t8w-VE-pfR" firstAttribute="bottom" secondItem="f6Q-PO-7JB" secondAttribute="bottom" id="0Tv-E8-GrI"/>
+                <constraint firstItem="f6Q-PO-7JB" firstAttribute="height" secondItem="7Wm-4N-OYR" secondAttribute="height" id="0tq-iA-Wii"/>
+                <constraint firstItem="7Wm-4N-OYR" firstAttribute="top" secondItem="o5F-Jk-na5" secondAttribute="bottom" id="1eH-zL-7pT"/>
+                <constraint firstAttribute="bottom" secondItem="7Wm-4N-OYR" secondAttribute="bottom" id="1xR-6r-nfG"/>
+                <constraint firstItem="f6Q-PO-7JB" firstAttribute="width" secondItem="C67-TE-iMZ" secondAttribute="width" id="7Mw-l3-kzq"/>
+                <constraint firstAttribute="trailing" secondItem="t8w-VE-pfR" secondAttribute="trailing" id="7sw-tM-xge"/>
+                <constraint firstItem="f6Q-PO-7JB" firstAttribute="height" secondItem="z8y-ZJ-Yhg" secondAttribute="height" id="8Sd-2h-XxE"/>
+                <constraint firstItem="t8w-VE-pfR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Dka-ug-ZNI"/>
+                <constraint firstItem="IcZ-ik-SKA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DtM-96-9Bl"/>
+                <constraint firstItem="7Wm-4N-OYR" firstAttribute="leading" secondItem="z8y-ZJ-Yhg" secondAttribute="trailing" id="EIT-aV-cHL"/>
+                <constraint firstAttribute="bottom" secondItem="fcP-x4-x3W" secondAttribute="bottom" id="Hi4-hG-sY3"/>
+                <constraint firstItem="z8y-ZJ-Yhg" firstAttribute="top" secondItem="C67-TE-iMZ" secondAttribute="bottom" id="IeM-S5-1wI"/>
+                <constraint firstItem="f6Q-PO-7JB" firstAttribute="width" secondItem="FAc-Ym-fU2" secondAttribute="width" id="KLk-pq-YZi"/>
+                <constraint firstItem="f6Q-PO-7JB" firstAttribute="height" secondItem="o5F-Jk-na5" secondAttribute="height" id="Mzu-OM-NRr"/>
+                <constraint firstAttribute="bottom" secondItem="z8y-ZJ-Yhg" secondAttribute="bottom" id="QjZ-i6-rXY"/>
+                <constraint firstItem="f6Q-PO-7JB" firstAttribute="height" secondItem="C67-TE-iMZ" secondAttribute="height" id="QmL-7s-akS"/>
+                <constraint firstItem="IcZ-ik-SKA" firstAttribute="bottom" secondItem="C67-TE-iMZ" secondAttribute="bottom" id="RDA-It-DL2"/>
+                <constraint firstItem="f6Q-PO-7JB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VXu-Sm-gNb"/>
+                <constraint firstItem="C67-TE-iMZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XZE-wl-pmV"/>
+                <constraint firstAttribute="trailing" secondItem="FAc-Ym-fU2" secondAttribute="trailing" id="ZLQ-jo-PUH"/>
+                <constraint firstAttribute="trailing" secondItem="7Wm-4N-OYR" secondAttribute="trailing" id="a4c-G7-YWv"/>
+                <constraint firstItem="C67-TE-iMZ" firstAttribute="top" secondItem="f6Q-PO-7JB" secondAttribute="bottom" id="aac-yy-DHk"/>
+                <constraint firstItem="f6Q-PO-7JB" firstAttribute="height" secondItem="FAc-Ym-fU2" secondAttribute="height" id="ff2-Fa-3yc"/>
+                <constraint firstItem="o5F-Jk-na5" firstAttribute="leading" secondItem="C67-TE-iMZ" secondAttribute="trailing" id="hFN-DI-PW0"/>
+                <constraint firstItem="f6Q-PO-7JB" firstAttribute="width" secondItem="o5F-Jk-na5" secondAttribute="width" id="i2A-10-1Tt"/>
+                <constraint firstItem="f6Q-PO-7JB" firstAttribute="width" secondItem="z8y-ZJ-Yhg" secondAttribute="width" id="jos-8U-LY5"/>
+                <constraint firstItem="FAc-Ym-fU2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nTb-bb-Zd4"/>
+                <constraint firstItem="f6Q-PO-7JB" firstAttribute="width" secondItem="7Wm-4N-OYR" secondAttribute="width" id="p1n-Hu-rbF"/>
+                <constraint firstItem="FAc-Ym-fU2" firstAttribute="leading" secondItem="f6Q-PO-7JB" secondAttribute="trailing" id="pnL-jQ-jyI"/>
+                <constraint firstAttribute="trailing" secondItem="o5F-Jk-na5" secondAttribute="trailing" id="rp0-HZ-H2Z"/>
+                <constraint firstItem="fcP-x4-x3W" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sMy-x9-Ldz"/>
+                <constraint firstItem="f6Q-PO-7JB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sZK-X8-UxN"/>
+                <constraint firstItem="o5F-Jk-na5" firstAttribute="top" secondItem="FAc-Ym-fU2" secondAttribute="bottom" id="t1K-hE-5vV"/>
+                <constraint firstItem="z8y-ZJ-Yhg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vQk-ep-WtV"/>
+                <constraint firstItem="fcP-x4-x3W" firstAttribute="trailing" secondItem="f6Q-PO-7JB" secondAttribute="trailing" id="vSU-pn-MrD"/>
+                <constraint firstAttribute="trailing" secondItem="IcZ-ik-SKA" secondAttribute="trailing" id="zC4-9h-tAs"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="357" y="267"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="entity_category_artist" width="60" height="63"/>
+        <image name="entity_category_brand" width="60" height="60"/>
+        <image name="entity_category_community" width="60" height="60"/>
+        <image name="entity_category_company" width="60" height="60"/>
+        <image name="entity_category_entertainment" width="60" height="60"/>
+        <image name="entity_category_local_business" width="60" height="60"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

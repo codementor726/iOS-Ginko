@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "__45-[YYYEditProfileViewController_ saveHomeData]_block_invoke:YYYEditProfileViewController_.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "dictWork">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__47-[NotExchangedViewController changeGPSSetting:]_block_invoke:NotExchangedViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "appDelegate.locationManager">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__83-[YYYEditProfileViewController_ photoPickerController:didSelectImage:avatar:frame:]_block_invoke:YYYEditProfileViewController_.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[YYYHomeInfoEditViewController setFont:]:YYYHomeInfoEditViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "btFontSize.currentTitle">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[YYYHomeInfoEditViewController saveHomeData]:YYYHomeInfoEditViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[AppDelegate sharedDelegate].dictInfoHome">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[YYYHomeInfoEditViewController drawInfo]:YYYHomeInfoEditViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[AppDelegate sharedDelegate].dictInfoHome">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[YYYEntityPreivewEditViewController_ saveData]:YYYEntityPreivewEditViewController_.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "lstPostBody">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[YYYEditProfileViewController_ showField]:YYYEditProfileViewController_.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "imvPhoto.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[YYYPreviewProfileViewController_ showField]:YYYPreviewProfileViewController_.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "imvPhoto.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[VideoEditController export]:VideoEditController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "filter">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[YYYEditProfileViewController_ uploadVideo::::]:YYYEditProfileViewController_.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "videoURL">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[YYYSignUpViewController btAgreeClick:]:YYYSignUpViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "txtEmail.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__70-[YYYEditProfileViewController_ photoPickerController:didPickupImage:]_block_invoke:YYYEditProfileViewController_.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "pickDict">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__45-[YYYEditProfileViewController_ saveWorkData]_block_invoke:YYYEditProfileViewController_.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "dictWork">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[YYYEditProfileViewController_ saveData]:YYYEditProfileViewController_.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "imvPhoto.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[YYYEntityPreivewEditViewController_ saveCurrentData]:YYYEntityPreivewEditViewController_.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "imvForeground.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PurpleDetailViewController setupUI]:PurpleDetailViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "arrHome">
+            </PersistentString>
+            <PersistentString
+               value = "[dictForeHome objectForKey:@&quot;image_url&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

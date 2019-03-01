@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ManageEntityViewController">
+            <connections>
+                <outlet property="addFieldButton" destination="Ksz-uL-bA7" id="d4O-xj-wgP"/>
+                <outlet property="addFieldButton2" destination="lRR-zK-faz" id="m8g-xt-WjA"/>
+                <outlet property="addFieldTable" destination="jHh-bV-I05" id="vze-ef-q2G"/>
+                <outlet property="addFieldView" destination="Ot5-9M-rxs" id="7kC-ij-JZK"/>
+                <outlet property="bottomSpacing" destination="pTi-9o-VhV" id="bzr-Fc-niG"/>
+                <outlet property="entityScrollView" destination="fms-pr-GeD" id="7Gw-LO-45R"/>
+                <outlet property="lockButton" destination="Fa3-TB-nsb" id="psx-I8-BGF"/>
+                <outlet property="lockNoticeLabel" destination="gMj-ab-5tU" id="wwL-Aw-oul"/>
+                <outlet property="subEntityAddButton" destination="Cc4-fF-dag" id="tv8-yf-f9G"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fms-pr-GeD">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="438"/>
+                    <color key="backgroundColor" red="0.062745098040000002" green="0.28627450980000002" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDB-kt-Sxx">
+                    <rect key="frame" x="0.0" y="438" width="320" height="66"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ksz-uL-bA7">
+                            <rect key="frame" x="259" y="10" width="41" height="41"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="41" id="EiC-14-gHh"/>
+                                <constraint firstAttribute="width" constant="41" id="niq-qs-kgU"/>
+                            </constraints>
+                            <state key="normal" image="add_profile_info_item_button"/>
+                            <connections>
+                                <action selector="addField:" destination="-1" eventType="touchUpInside" id="Z4y-kv-Pfa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fa3-TB-nsb">
+                            <rect key="frame" x="140" y="20" width="41" height="41"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="41" id="Qbp-fK-cOA"/>
+                                <constraint firstAttribute="width" constant="41" id="TUP-uc-EH5"/>
+                            </constraints>
+                            <state key="normal" image="personal_profile_locked"/>
+                            <state key="selected" image="personal_profile_unlocked"/>
+                            <connections>
+                                <action selector="doLockOrUnlock:" destination="-1" eventType="touchUpInside" id="eLg-cM-UdY"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entity is private" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMj-ab-5tU">
+                            <rect key="frame" x="94" y="-9" width="133" height="32"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="SWM-Xw-VvP"/>
+                                <constraint firstAttribute="width" constant="133" id="ZzJ-2Q-Bd0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cc4-fF-dag">
+                            <rect key="frame" x="18" y="7" width="45" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="XYm-uN-WiU"/>
+                                <constraint firstAttribute="height" constant="50" id="gSD-4j-Qhf"/>
+                            </constraints>
+                            <state key="normal" image="subEntity_img"/>
+                            <connections>
+                                <action selector="subEntityAdd:" destination="-1" eventType="touchUpInside" id="7Zo-S2-9K5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Cc4-fF-dag" firstAttribute="centerY" secondItem="Ksz-uL-bA7" secondAttribute="centerY" constant="1.5" id="4XV-eu-C7O"/>
+                        <constraint firstItem="gMj-ab-5tU" firstAttribute="centerX" secondItem="lDB-kt-Sxx" secondAttribute="centerX" id="6lg-vG-ufm"/>
+                        <constraint firstAttribute="trailing" secondItem="Ksz-uL-bA7" secondAttribute="trailing" constant="20" id="86g-gh-sFl"/>
+                        <constraint firstItem="Fa3-TB-nsb" firstAttribute="centerX" secondItem="lDB-kt-Sxx" secondAttribute="centerX" id="J7O-fJ-QhX"/>
+                        <constraint firstAttribute="bottom" secondItem="gMj-ab-5tU" secondAttribute="bottom" constant="43" id="Owq-5A-LTK"/>
+                        <constraint firstAttribute="bottom" secondItem="Ksz-uL-bA7" secondAttribute="bottom" constant="15" id="Tay-Ld-Bg5"/>
+                        <constraint firstItem="Cc4-fF-dag" firstAttribute="leading" secondItem="lDB-kt-Sxx" secondAttribute="leading" constant="18" id="gdS-CP-7GC"/>
+                        <constraint firstAttribute="height" constant="66" id="hH3-LK-baE"/>
+                        <constraint firstItem="Fa3-TB-nsb" firstAttribute="centerY" secondItem="Ksz-uL-bA7" secondAttribute="centerY" constant="10" id="mYQ-Ji-4nh"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ot5-9M-rxs">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jHh-bV-I05">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="438"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="Ovn-bv-YsQ"/>
+                                <outlet property="delegate" destination="-1" id="HL5-sF-HYZ"/>
+                            </connections>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRR-zK-faz">
+                            <rect key="frame" x="259" y="448" width="41" height="41"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="41" id="567-D4-eAc"/>
+                                <constraint firstAttribute="width" constant="41" id="ai2-9Y-LNn"/>
+                            </constraints>
+                            <state key="normal" image="remove_profile_info_item_button"/>
+                            <connections>
+                                <action selector="hideAddFieldView:" destination="-1" eventType="touchUpInside" id="5cL-e6-yWh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="jHh-bV-I05" secondAttribute="trailing" id="5EG-um-Unh"/>
+                        <constraint firstItem="jHh-bV-I05" firstAttribute="leading" secondItem="Ot5-9M-rxs" secondAttribute="leading" id="8Ar-5m-B6l"/>
+                        <constraint firstItem="jHh-bV-I05" firstAttribute="top" secondItem="Ot5-9M-rxs" secondAttribute="top" id="HIA-9b-ggD"/>
+                        <constraint firstAttribute="trailing" secondItem="lRR-zK-faz" secondAttribute="trailing" constant="20" id="LdP-bQ-Y4t"/>
+                        <constraint firstAttribute="bottom" secondItem="lRR-zK-faz" secondAttribute="bottom" constant="15" id="Ml7-8K-bcE"/>
+                        <constraint firstAttribute="bottom" secondItem="jHh-bV-I05" secondAttribute="bottom" constant="66" id="VcY-Cy-SFf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lDB-kt-Sxx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="81j-bl-Uck"/>
+                <constraint firstItem="Ot5-9M-rxs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8ov-bJ-vrQ"/>
+                <constraint firstAttribute="trailing" secondItem="lDB-kt-Sxx" secondAttribute="trailing" id="CQr-Fp-nHO"/>
+                <constraint firstItem="lDB-kt-Sxx" firstAttribute="top" secondItem="fms-pr-GeD" secondAttribute="bottom" id="Dfw-kz-6Sk"/>
+                <constraint firstItem="fms-pr-GeD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Gjl-Rn-ocz"/>
+                <constraint firstItem="fms-pr-GeD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IWJ-zE-7mB"/>
+                <constraint firstAttribute="trailing" secondItem="Ot5-9M-rxs" secondAttribute="trailing" id="Iw4-hb-fLE"/>
+                <constraint firstAttribute="bottom" secondItem="Ot5-9M-rxs" secondAttribute="bottom" id="RNW-Up-aeJ"/>
+                <constraint firstAttribute="trailing" secondItem="fms-pr-GeD" secondAttribute="trailing" id="hKm-c7-0dm"/>
+                <constraint firstAttribute="bottom" secondItem="lDB-kt-Sxx" secondAttribute="bottom" id="pTi-9o-VhV"/>
+                <constraint firstItem="Ot5-9M-rxs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="r2F-oj-FK0"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="404" y="267"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add_profile_info_item_button" width="41" height="41"/>
+        <image name="personal_profile_locked" width="17" height="21"/>
+        <image name="personal_profile_unlocked" width="17" height="21"/>
+        <image name="remove_profile_info_item_button" width="41" height="41"/>
+        <image name="subEntity_img" width="64" height="64"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

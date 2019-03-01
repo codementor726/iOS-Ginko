@@ -1,0 +1,93 @@
+//
+//  ginko-Prefix.pch
+//  ginko
+//
+//  Created by MobiDev on 1/24/15.
+//  Copyright (c) 2015 com.xchangewithme. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef ginko_ginko_Prefix_pch
+#define ginko_ginko_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+//#define SERVER_URL                  @"http://www.xchangewith.me/api/v2/api"  //test
+#define SERVER_URL                  @"http://api.ginko.mobi/v3"     //prod
+                                    // @"http://dev.xchangewith.me/api"
+
+#define GPS_CONTACT                 @"GPS Contact"
+
+#define CURRENT_LOCATION                @"CURRENT_LOCATION"
+#define APP_TITLE                       @"GINKO"
+#define LOCATION_CHANGE_NOTIFICATION    @"Location_Change_Notification"
+#define GET_CONTACTLIST_NOTIFICATION    @"Get_Contact_List_Notification"
+#define CONTACT_SYNC_NOTIFICATION       @"Contact_Sync_Notification"
+#define UPDATE_XCHG_NOTIFICATION        @"xcg_req_num"
+#define ENTITY_MESSAGE_NOTIFICATION     @"Entity_Message_Notification"
+#define NOTIFICATION_GPSSETTING_CHANGED @"NOTIFICATION_GPS_SETTING_CHANGED"
+#define NOTIFICATION_CONTACTGPS_CHANGED @"NOTIFICATION_CONTACTGPS_CHANGED"
+#define NOTIFICATION_GINKO_CONTACT      @"NOTIFICATION_GINKO_CONTACT"
+
+#define NOTIFICATION_GINKO_VIDEO_CONFERENCE                 @"NOTIFICATION_GINKO_VIDEO_CONFERENCE"
+#define NOTIFICATION_HANGUP_VIDEO_CONFERENCE                @"NOTIFICATION_HANGUP_VIDEO_CONFERENCE"
+#define NOTIFICATION_GET_SDP_VIDEO_CONFERENCE               @"NOTIFICATION_GET_SDP_VIDEO_CONFERENCE"
+#define NOTIFICATION_GET_CANDIDATES_VIDEO_CONFERENCE        @"NOTIFICATION_GET_CANDIDATES_VIDEO_CONFERENCE"
+#define NOTIFICATION_INVITE_MEMBERS_CONFERENCE              @"NOTIFICATION_INVITE_MEMBERS_CONFERENCE"
+#define NOTIFICATION_MEMEBER_STATUS_CONFERENCE              @"NOTIFICATION_MEMEBER_STATUS_CONFERENCE"
+#define NOTIFICATION_MESSAGE_CONFERENCE                     @"NOTIFICATION_MESSAGE_CONFERENCE"
+#define NOTIFICATION_MESSAGEBOX_OPEN_CONFERENCE             @"NOTIFICATION_MESSAGEBOX_OPEN_CONFERENCE"
+
+#define CLOSE_ALERT_WHEN_CONFERENCEVIEW_NOTIFICATION        @"CLOSE_ALERT_WHEN_CONFERENCEVIEW_NOTIFICATION"
+
+#define ApplicationWillResignActive     @"applicationWillResignActive"
+#define MESSAGE_CAMERA_DISABLED         @"Your camera is disabled.\nPlease go to settings and grant access to camera."
+#define MESSAGE_RECLIMIT_REACHED        @"You have reached a recording limit of 30 secs."
+#define MESSAGE_BLANK_CONTACT           @"Contacts without a name will not be sent to the main contact screen."
+
+#define SHARE_MAIL_TEXT                 @"\nSent from Ginko"
+
+#define PHOTOBOUND	@"!@#!xyz!@#!"
+#define MAPBOUND	@"!@!#xyz!@#!"
+#define VIDEOBOUND	@"!@!x#yz!@#!"
+#define VOICEBOUND	@"!@!xy#z!@#!"
+
+#define DEVENV
+
+#define SB_GINKOME [UIStoryboard storyboardWithName:@"GinkoMe" bundle:[NSBundle mainBundle]]
+#define RGBA(r,g,b,a) [UIColor colorWithRed:(r/255.0f) green: (g/255.0f) blue:(b/255.0f) alpha: a]
+#define COLOR_PURPLE_THEME RGBA(127, 91, 134, 1)
+#define COLOR_GREEN_THEME RGBA(186, 255, 182, 1)
+#define MOC [AppDelegate sharedDelegate].managedObjectContext
+#define APPDELEGATE [AppDelegate sharedDelegate]
+#define SESSIONID [AppDelegate sharedDelegate].sessionId
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AppDelegate.h"
+#import "Communication.h"
+#import "MBProgressHUD.h"
+#import <CoreData/CoreData.h>
+
+#import "UIView+FindAndResignFirstResponder.h"
+#import "SVProgressHUD.h"
+#import "Global.h"
+#import "CommonMethods.h"
+#import "Contact.h"
+#import "SearchedContact.h"
+#import "UIView+FirstResponder.h"
+#import "UIView+IRAdditions.h"
+#import "LocationOfEntity.h"
+#import "Groups.h"
+#import "YYYChatViewController.h"
+#endif
+
+#endif
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F1021" minimumToolsVersion="Xcode 4.3">
+    <entity name="Contact" representedClassName="Contact" syncable="YES">
+        <attribute name="contact_id" attributeType="String" syncable="YES"/>
+        <attribute name="contact_type" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="data" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Message" representedClassName="Message" syncable="YES">
+        <attribute name="boardId" optional="YES" attributeType="Integer 64" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="datetime" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="mediaFilePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="userId" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Users" inverseName="messages" inverseEntity="Users" syncable="YES"/>
+    </entity>
+    <entity name="Users" representedClassName="Users" syncable="YES">
+        <attribute name="userId" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="messages" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Message" inverseName="userId" inverseEntity="Message" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Contact" positionX="1701" positionY="-567" width="227" height="88"/>
+        <element name="Message" positionX="1915" positionY="-396" width="128" height="133"/>
+        <element name="Users" positionX="1647" positionY="-414" width="128" height="73"/>
+    </elements>
+</model>

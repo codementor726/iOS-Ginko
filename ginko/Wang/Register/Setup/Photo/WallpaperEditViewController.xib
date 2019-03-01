@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WallpaperEditViewController">
+            <connections>
+                <outlet property="filterView" destination="DgO-LB-8op" id="KKI-8Z-zwI"/>
+                <outlet property="slider" destination="dqC-JH-9uo" id="ouN-I4-y9T"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="482-gp-nmX" userLabel="View - Tool Bar">
+                    <rect key="frame" x="0.0" y="623" width="375" height="0.0"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSU-Mq-0Vy" userLabel="Btn - Brightness">
+                            <rect key="frame" x="100" y="0.0" width="49" height="49"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="PhotoTool2">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onBrightness:" destination="-1" eventType="touchUpInside" id="qiT-mX-eXo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vom-rA-1Ei" userLabel="Btn - Transparency">
+                            <rect key="frame" x="171" y="0.0" width="49" height="49"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="PhotoTool3">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onTransparency:" destination="-1" eventType="touchUpInside" id="Gvg-C5-ipp"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.086810611188411713" green="0.086808003485202789" blue="0.08680947870016098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="PbT-zq-bJ5"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DgO-LB-8op" userLabel="View - Filter">
+                    <rect key="frame" x="0.0" y="527" width="375" height="96"/>
+                    <color key="backgroundColor" red="0.15056313574314117" green="0.15055863559246063" blue="0.15056121349334717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="96" id="93a-v2-GN3"/>
+                    </constraints>
+                </view>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wL-C5-vy6">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <items>
+                        <barButtonItem systemItem="cancel" id="Umf-b6-Uax">
+                            <connections>
+                                <action selector="cancel:" destination="-1" id="gRE-Do-t51"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="70t-Dm-Yz2"/>
+                        <barButtonItem title="Choose" id="saU-Lc-PJ0">
+                            <connections>
+                                <action selector="choose:" destination="-1" id="z7x-eO-0kh"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </toolbar>
+                <slider opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dqC-JH-9uo" userLabel="Slider">
+                    <rect key="frame" x="82" y="180" width="200" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="onSliderChange:" destination="-1" eventType="valueChanged" id="G4Q-xZ-Xml"/>
+                    </connections>
+                </slider>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6wL-C5-vy6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="19S-rf-XCW"/>
+                <constraint firstItem="482-gp-nmX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2Xz-U4-oPO"/>
+                <constraint firstItem="6wL-C5-vy6" firstAttribute="top" secondItem="482-gp-nmX" secondAttribute="bottom" id="8fp-vT-C7J"/>
+                <constraint firstAttribute="bottom" secondItem="6wL-C5-vy6" secondAttribute="bottom" id="DP6-bi-QgV"/>
+                <constraint firstAttribute="trailing" secondItem="6wL-C5-vy6" secondAttribute="trailing" id="Yis-1B-R2t"/>
+                <constraint firstAttribute="trailing" secondItem="DgO-LB-8op" secondAttribute="trailing" id="a5Z-Gx-WhL"/>
+                <constraint firstItem="DgO-LB-8op" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="b9t-Fh-6Nb"/>
+                <constraint firstItem="482-gp-nmX" firstAttribute="top" secondItem="DgO-LB-8op" secondAttribute="bottom" id="nUZ-R3-s6w"/>
+                <constraint firstAttribute="trailing" secondItem="482-gp-nmX" secondAttribute="trailing" id="vJQ-un-2Wr"/>
+            </constraints>
+            <point key="canvasLocation" x="-128" y="47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="PhotoTool2" width="32" height="32"/>
+        <image name="PhotoTool3" width="33" height="26"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

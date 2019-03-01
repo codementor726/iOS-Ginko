@@ -1,0 +1,35 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 24,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 26,
+          "top" : 28,
+          "right" : 0,
+          "left" : 24
+        }
+      },
+      "idiom" : "universal",
+      "filename" : "infoDetails.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

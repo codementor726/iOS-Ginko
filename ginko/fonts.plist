@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Arial</string>
+	<string>Arial Black</string>
+	<string>Arial Narrow 7</string>
+	<string>AvantGarde Bk BT</string>
+	<string>BankGothic Md BT</string>
+	<string>Bazooka</string>
+	<string>Book Antiqua</string>
+	<string>Calibri</string>
+	<string>Calligrapher</string>
+	<string>Century Gothic</string>
+	<string>Charlesworth</string>
+	<string>CloisterBlack BT</string>
+	<string>Comic Sans MS</string>
+	<string>Courier New</string>
+	<string>Lithograph</string>
+	<string>Lithograph Light</string>
+	<string>Lucida Handwriting</string>
+	<string>Signboard</string>
+	<string>Storybook</string>
+	<string>Subway</string>
+	<string>Tahoma</string>
+	<string>Times New Roman</string>
+</array>
+</plist>
